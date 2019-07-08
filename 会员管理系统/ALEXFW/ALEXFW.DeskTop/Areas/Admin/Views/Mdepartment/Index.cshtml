@@ -1,0 +1,157 @@
+﻿@model ALEXFW.Entity.UserAndRole.Department
+@{
+    ViewBag.Title = "编辑店铺信息";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<ol class="breadcrumb" style="background-color: white">
+    <li>
+        <a href="#">工作桌面</a>
+    </li>
+    <li class="active">
+        <a href="#">编辑店铺</a>
+    </li>
+</ol>
+
+
+<div class="panel panel-default margin-10">
+    <div class="panel-body">
+
+        <form class="form-horizontal" role="form" method="post" id="form" enctype="multipart/form-data">
+            @*隐藏控件，部分字段不允许修改*@
+            <input type="hidden" name="Index" value="@Model.Index">
+            <input type="hidden" name="Index" value="@Model.SortCode">
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">店铺名称</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" name="DepartmentName" placeholder="请输入店铺名称" value="@Model.DepartmentName">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">店铺Logo</label>
+                <div class="col-sm-8">
+                    <div id="logoImg">
+                        @if (Model.Logo == null)
+                        {
+                            <i class="glyphicon glyphicon-home"></i>
+                        }
+                        else
+                        {
+                            <img width="100" src="@Model.Logo" />
+                        }
+                    </div>
+                    <div>
+
+                        <input type="file" name="Logo" id="Logo" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">店铺简介</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" name="DSCN" placeholder="请输入店铺简介" value="@Model.DSCN">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">店铺电话</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" name="Tel" placeholder="请输入店铺电话" value="@Model.Tel">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">店铺地址</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" name="Adress" placeholder="请输入店铺地址" value="@Model.Adress">
+                </div>
+            </div>
+
+            <div class="col-sm-2"></div>
+            <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">保存</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal fade" id="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">保存结果</h4>
+            </div>
+            <div class="modal-body" id="dialogContent">
+
+            </div>
+            <div class="modal-footer">
+                <button type="dialogOK" class="btn btn-default" data-dismiss="modal">确定</button>
+                <button type="dialogCancel" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+  function dialog(title, content, ok) {
+        $('#dialogTitle').html(title);
+        $('#dialogContent').html(content);
+        $('#dialog').modal('show');
+        $('#dialogOK').unbind('click');
+        if (ok == undefined)
+            $('#dialogOK').click(function() {
+                $('#dialog').modal('hide');
+            });
+        else
+            $('#dialogOK').click(ok);
+    }
+
+    $('#dialogCancel').click(function() {
+        $('#dialog').modal('hide');
+    });
+
+    $('#dialog').modal({ show: false });
+
+    $('#form').ajaxForm({
+        error: function(result) {
+            dialog('保存结果', '<p>保存失败，原因：' + result.responseText + '</p>', function() { $('#dialog').modal('hide'); });
+        },
+        success: function(result) {
+            dialog('保存结果', '<p>保存成功。</p>', function() { windows.location = '@Url.Action("Index","Admin")'; });
+        }
+    });
+
+
+    $('#Logo').change(function () {
+        var file = $(this);
+        var imageResult = file[0].files[0];
+
+
+        var path = imageResult.name;
+        var extension = path.substring(path.lastIndexOf("."), path.length);
+        if (!(extension.toLowerCase() == '.jpg' || extension.toLowerCase() == '.png' || extension.toLowerCase() == '.gif')) {
+            alert('只能上传图片');
+            $('#Logo').val("");
+            return;
+        }
+        if ((imageResult.size / 1024).toFixed(2) > 4096) {
+            alert('上传图片过大，请上传小于4M的图片');
+            return;
+        }
+        if (imageResult) {
+            var reader = new FileReader();
+            reader.onload = function(event) {
+                var txt = event.target.result;
+                var img = $('<img width=100 src="' + txt + '" alt="">');
+                $('#logoImg').html(img);
+            };
+
+            reader.readAsDataURL(imageResult);
+        }
+    });
+</script>

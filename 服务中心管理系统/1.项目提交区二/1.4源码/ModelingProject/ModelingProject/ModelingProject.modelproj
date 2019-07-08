@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{f6acc376-a263-4523-99a9-65d1926e8c4c}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>ModelingProject</Name>
+    <RootNamespace>ModelingProject</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="活动图\在校学生活动图\信息反馈活动图.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="活动图\在校学生活动图\信息反馈活动图.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>活动图\在校学生活动图\信息反馈活动图.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="活动图\在校学生活动图\失物招领.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="活动图\在校学生活动图\失物招领.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>活动图\在校学生活动图\失物招领.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="活动图\在校学生活动图\网上投诉活动图.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="活动图\在校学生活动图\网上投诉活动图.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>活动图\在校学生活动图\网上投诉活动图.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="活动图\在校学生活动图\网上报修活动图.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="活动图\在校学生活动图\网上报修活动图.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>活动图\在校学生活动图\网上报修活动图.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="活动图\服务中心队长活动图\服务中心队长对投诉与反馈的数据处理.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="活动图\服务中心队长活动图\服务中心队长对投诉与反馈的数据处理.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>活动图\服务中心队长活动图\服务中心队长对投诉与反馈的数据处理.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="活动图\服务中心队长活动图\服务中心队长的失物招领业务.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="活动图\服务中心队长活动图\服务中心队长的失物招领业务.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>活动图\服务中心队长活动图\服务中心队长的失物招领业务.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="活动图\服务中心队长活动图\服务中心队长的报修服务.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="活动图\服务中心队长活动图\服务中心队长的报修服务.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>活动图\服务中心队长活动图\服务中心队长的报修服务.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="活动图\登录系统活动图\登录系统.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="活动图\登录系统活动图\登录系统.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>活动图\登录系统活动图\登录系统.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="活动图\系统管理员活动图\管理员维护学生数据.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="活动图\系统管理员活动图\管理员维护学生数据.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>活动图\系统管理员活动图\管理员维护学生数据.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="活动图\系统管理员活动图\管理员维护维修人员数据.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="活动图\系统管理员活动图\管理员维护维修人员数据.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>活动图\系统管理员活动图\管理员维护维修人员数据.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="活动图\系统管理员活动图\管理员维护队长数据.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="活动图\系统管理员活动图\管理员维护队长数据.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>活动图\系统管理员活动图\管理员维护队长数据.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="活动图\维修人员活动图\维修人员的后台网上数据.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="活动图\维修人员活动图\维修人员的后台网上数据.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>活动图\维修人员活动图\维修人员的后台网上数据.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="用例图\在校学生用例图.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="用例图\在校学生用例图.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>用例图\在校学生用例图.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="用例图\服务中心队长用例图.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="用例图\服务中心队长用例图.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>用例图\服务中心队长用例图.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="用例图\登录系统.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="用例图\登录系统.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>用例图\登录系统.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="用例图\管理员.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="用例图\管理员.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>用例图\管理员.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="用例图\维修人员.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="用例图\维修人员.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>用例图\维修人员.usecasediagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\ModelingProject.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="活动图\维修人员活动图" />
+    <Folder Include="活动图\系统管理员活动图" />
+    <Folder Include="活动图\在校学生活动图" />
+    <Folder Include="活动图\登录系统活动图" />
+    <Folder Include="活动图\服务中心队长活动图" />
+    <Folder Include="透视图" />
+    <Folder Include="用例图" />
+    <Folder Include="活动图" />
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="透视图\产品透视图.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="透视图\产品透视图.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>透视图\产品透视图.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="透视图\产品透视图.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>透视图\产品透视图.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+</Project>

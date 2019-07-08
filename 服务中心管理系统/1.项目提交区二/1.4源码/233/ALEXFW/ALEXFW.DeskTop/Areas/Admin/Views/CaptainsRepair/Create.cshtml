@@ -1,0 +1,54 @@
+﻿@using ALEXFW.Entity.Demos
+@{
+    ViewBag.Title = "添加维修信息";
+    var member = (CaptainsRepair)Session["captainsRepair"];
+}
+<ol class="breadcrumb">
+    <li>
+        <a href="@Html.Raw(Url.Action("Index", "captainsRepair"))">维修列表</a>
+    </li>
+</ol>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <form id="form" class="form-horizontal" role="form" action="@Url.Action("create", "CaptainsRepair")" method="post">
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">维修单号</label>
+                            <div class="col-md-8">
+                                <input class="form-control" id="CardNumber" name="CardNumber" type="text" value="" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">是否完成</label>
+                            <div class="col-sm-8">
+
+                                <div id="IsActivate">
+                                    <div class="radio-inline">
+                                        <label>
+                                            <input type="radio" name="IsActivate" value="true" checked="checked">是
+                                        </label>
+                                    </div>
+                                    <div class="radio-inline">
+                                        <label>
+                                            <input type="radio" name="IsActivate" value="false">否
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="submit" class="btn btn-primary" id="submit" value="确定">
+                                <input type="reset" class="btn btn-default" value="取消">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="18f3cbc0-ec38-40f7-84b7-c26985a2500b" name="服务中心队长的失物招领业务" linkedPackageId="0c62f88c-fe7c-4f5c-9d72-ce96324a807d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="8bf4c08c-a4a8-438d-98e3-0a1cc5d04dc2">
+      <elementDefinition Id="cded3a25-ab6a-4118-9f49-d1d45b72f8eb" />
+      <body>队长进入管理后台页面</body>
+      <annotatedElements>
+        <initialNodeMoniker Id="09614ac1-8c7c-441e-ae36-c9d11e58f072" LastKnownName="Initial1" />
+      </annotatedElements>
+    </comment>
+    <comment Id="134ae5b4-5a6c-4262-a4ba-67cb8cd0abfb">
+      <elementDefinition Id="c325aabf-71ba-4d54-93dd-3135b55fa06a" />
+      <body>提交失败</body>
+      <annotatedElements>
+        <decisionNodeMoniker Id="83eef05a-223e-4081-9567-93a51026cb5a" LastKnownName="Decision1" />
+      </annotatedElements>
+    </comment>
+    <comment Id="eff552be-26de-43fc-9938-80b13e5a8ec7">
+      <elementDefinition Id="7123a325-977b-43a4-b0d8-2f16274fb505" />
+      <body>提交失败</body>
+      <annotatedElements>
+        <decisionNodeMoniker Id="79fc8d91-81af-43c1-8b97-63a28d0e4405" LastKnownName="Decision3" />
+      </annotatedElements>
+    </comment>
+    <comment Id="6f11c4a2-a93d-41f3-bf7d-0eeec5ff9b84">
+      <elementDefinition Id="1446bde0-191d-47a5-aef9-e5d9e3d65930" />
+      <body>提交失败</body>
+      <annotatedElements>
+        <decisionNodeMoniker Id="29bdd9a8-1141-476e-b46e-be5ad0174a1f" LastKnownName="Decision2" />
+      </annotatedElements>
+    </comment>
+    <comment Id="60d9465f-4453-48b0-8dec-18e214a2cd14">
+      <elementDefinition Id="7cabaeaf-e256-4a59-a10f-edf4d0e9f856" />
+      <body>继续其他操作.</body>
+      <annotatedElements>
+        <activityFinalNodeMoniker Id="58ae4fdc-0480-4c7c-862d-138bbaf406b9" LastKnownName="ActivityFinal1" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="922ce6f6-9c10-4153-bbd1-ad56e318830d" name="服务中心队长的失物招领业务" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="66c8b3e0-7cb1-42ad-b0c6-c093fcd7879c" />
+        <nodes>
+          <opaqueAction Id="f72d46a7-7d31-4509-83f1-3db6aa970f59" name="提取失物招领信息" isLeaf="false">
+            <elementDefinition Id="cc07df71-ce90-4c15-acee-5157de47c01e" />
+            <flowNodeTargets>
+              <controlFlow Id="273027ca-0268-4a1b-9c62-4a4f1622ef5c" isLeaf="false">
+                <forkNodeMoniker Id="001876de-fdfc-4443-a1b2-226d3e62b726" LastKnownName="Fork1" />
+                <elementDefinition Id="6a1b573e-60c5-4f45-836d-43ae75752948" />
+              </controlFlow>
+              <controlFlow Id="d6dfba4c-4118-4639-b1aa-09130f61d725" isLeaf="false">
+                <activityFinalNodeMoniker Id="58ae4fdc-0480-4c7c-862d-138bbaf406b9" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="c44ef828-a4bf-4f1d-92c5-028801ac18b9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <initialNode Id="09614ac1-8c7c-441e-ae36-c9d11e58f072" name="Initial1" isLeaf="false">
+            <elementDefinition Id="e9da0c38-0082-4d28-8ef5-70ac67e243e2" />
+            <flowNodeTargets>
+              <controlFlow Id="4512159a-0b75-44b8-a9df-4fc3d8d54ecb" isLeaf="false">
+                <opaqueActionMoniker Id="f72d46a7-7d31-4509-83f1-3db6aa970f59" LastKnownName="提取失物招领信息" />
+                <elementDefinition Id="f7696f05-04f4-4b5e-ba18-364f8a7ab402" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <forkNode Id="001876de-fdfc-4443-a1b2-226d3e62b726" name="Fork1" isLeaf="false">
+            <elementDefinition Id="45d3077f-9272-4f3c-b465-6b73086a35bb" />
+            <flowNodeTargets>
+              <controlFlow Id="f05c24f9-201d-44ab-be3d-47626174f969" isLeaf="false">
+                <opaqueActionMoniker Id="c0c0c9b7-c56f-4c12-a6d1-381e881a079b" LastKnownName="选择新增“丢失物品”信息操作" />
+                <elementDefinition Id="d34adc81-bb80-4aee-9871-bc36894c3233" />
+              </controlFlow>
+              <controlFlow Id="35923238-ccf9-4326-a376-4f548cc1c743" isLeaf="false">
+                <opaqueActionMoniker Id="ea5488fa-878d-4b72-971a-a8dbc504a6cc" LastKnownName="选择物品“明细”操作" />
+                <elementDefinition Id="c21a777a-cfd1-4faf-8386-3b78919512c8" />
+              </controlFlow>
+              <controlFlow Id="9e7e2c8c-c170-4ec9-be73-681c92e6bc51" isLeaf="false">
+                <opaqueActionMoniker Id="48110cf4-cfa0-4bff-9caf-65827f578a18" LastKnownName="选择修改“丢失物品”操作" />
+                <elementDefinition Id="25fea591-7646-4790-8be7-526fce2a8286" />
+              </controlFlow>
+              <controlFlow Id="89e2c28a-06a7-4717-84bc-e2f781e102e9" isLeaf="false">
+                <opaqueActionMoniker Id="76f7f906-7fd4-4e49-bb95-6741e6a39267" LastKnownName="选择“登记失主”信息操作" />
+                <elementDefinition Id="2fe3a51a-b573-4e5b-a943-68a7e85cda75" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction Id="c0c0c9b7-c56f-4c12-a6d1-381e881a079b" name="选择新增“丢失物品”信息操作" isLeaf="false">
+            <elementDefinition Id="26b96c49-8f04-4f0c-a36b-bbd3bfab7fbb" />
+            <flowNodeTargets>
+              <controlFlow Id="50a4338c-413a-4d4b-bf19-fa291822eeb9" isLeaf="false">
+                <opaqueActionMoniker Id="51f63491-fccb-4f0a-a2a4-cf68620c908b" LastKnownName="输入物品的信息数据" />
+                <elementDefinition Id="67da850b-7b55-4849-9359-c0b4fbb77b8b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="51f63491-fccb-4f0a-a2a4-cf68620c908b" name="输入物品的信息数据" isLeaf="false">
+            <elementDefinition Id="fcd75cca-0989-4f48-b602-e3ef9ada72c3" />
+            <flowNodeTargets>
+              <controlFlow Id="7f9090ed-8290-4b5b-8a92-52923aa240a0" isLeaf="false">
+                <opaqueActionMoniker Id="002a4f83-1d69-4b42-b95c-a470e40573d3" LastKnownName="提交数据" />
+                <elementDefinition Id="b490b3bf-2dde-4a6b-852c-c756803adc33" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="002a4f83-1d69-4b42-b95c-a470e40573d3" name="提交数据" isLeaf="false">
+            <elementDefinition Id="84fec034-087c-4064-98cb-a824e502b541" />
+            <flowNodeTargets>
+              <controlFlow Id="bbb90c7b-475c-4554-b94e-9f283e5edc47" isLeaf="false">
+                <decisionNodeMoniker Id="83eef05a-223e-4081-9567-93a51026cb5a" LastKnownName="Decision1" />
+                <elementDefinition Id="2a228318-187f-4116-873d-1faed918a20c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="83eef05a-223e-4081-9567-93a51026cb5a" name="Decision1" isLeaf="false">
+            <elementDefinition Id="feaa0337-069d-4e5a-848e-74279430f9cd" />
+            <flowNodeTargets>
+              <controlFlow Id="b6e38fa3-1b0a-4749-b30c-9e1f5e54ee8c" isLeaf="false">
+                <opaqueActionMoniker Id="bbe51c06-bef4-4ff6-9984-13cc05517c17" LastKnownName="提交成功" />
+                <elementDefinition Id="42875445-4553-48df-a695-1ed8aa43010e" />
+              </controlFlow>
+              <controlFlow Id="8e46870f-09e4-4020-b70b-6408fcef7b5a" isLeaf="false">
+                <opaqueActionMoniker Id="51f63491-fccb-4f0a-a2a4-cf68620c908b" LastKnownName="输入物品的信息数据" />
+                <elementDefinition Id="9c3dd4c2-236b-4eab-bd5c-30e9acbb5be7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="bbe51c06-bef4-4ff6-9984-13cc05517c17" name="提交成功" isLeaf="false">
+            <elementDefinition Id="23c5bc19-ae40-48b1-80ac-f5190dc59105" />
+            <flowNodeTargets>
+              <controlFlow Id="47da30a4-e917-4089-a90a-285c3ce2d98f" isLeaf="false">
+                <joinNodeMoniker Id="cb73b1ff-8ca6-40d8-b24d-5e5f077289f3" LastKnownName="Join1" />
+                <elementDefinition Id="28b17265-8ba1-4afb-a3ff-2a413841fe78" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ea5488fa-878d-4b72-971a-a8dbc504a6cc" name="选择物品“明细”操作" isLeaf="false">
+            <elementDefinition Id="8b518d64-5466-4a84-a769-dacde8a2ef64" />
+            <flowNodeTargets>
+              <controlFlow Id="5381c6dd-0de2-4dbd-8b55-be3f0ee3b14f" isLeaf="false">
+                <opaqueActionMoniker Id="bc35356a-586d-43ff-a74b-052b7c6c1725" LastKnownName="获取选定对象信息" />
+                <elementDefinition Id="f693265e-b0b4-4d8e-bbab-4433b6588a05" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="bc35356a-586d-43ff-a74b-052b7c6c1725" name="获取选定对象信息" isLeaf="false">
+            <elementDefinition Id="896596c4-836c-436c-9a56-d7f9716e7f9d" />
+            <flowNodeTargets>
+              <controlFlow Id="1fff95c9-7770-4867-a491-53a96a7dec23" isLeaf="false">
+                <opaqueActionMoniker Id="84a54ec7-c640-4ce3-8334-e142f21fab4e" LastKnownName="提取丢失物品信息内容" />
+                <elementDefinition Id="143458aa-20b0-4ab4-84d4-1218ebea312e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="84a54ec7-c640-4ce3-8334-e142f21fab4e" name="提取丢失物品信息内容" isLeaf="false">
+            <elementDefinition Id="55e97e69-2ecc-4a74-a31d-4c048a4cbfe1" />
+            <flowNodeTargets>
+              <controlFlow Id="df2de3ec-74b7-41e5-80a5-6e37f7a96756" isLeaf="false">
+                <joinNodeMoniker Id="cb73b1ff-8ca6-40d8-b24d-5e5f077289f3" LastKnownName="Join1" />
+                <elementDefinition Id="c75a8c20-4cb2-404b-bf59-05c2a577c302" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="48110cf4-cfa0-4bff-9caf-65827f578a18" name="选择修改“丢失物品”操作" isLeaf="false">
+            <elementDefinition Id="e2d8fe21-0a1e-4697-92b2-f5325b8ad914" />
+            <flowNodeTargets>
+              <controlFlow Id="10083820-a119-41b6-9aff-e2cbc7be22f1" isLeaf="false">
+                <opaqueActionMoniker Id="bafba191-2656-4731-9928-4fb548f6a849" LastKnownName="获取接受选定的对象" />
+                <elementDefinition Id="92d8432d-e522-42dd-a0a3-d136900dc633" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="bafba191-2656-4731-9928-4fb548f6a849" name="获取接受选定的对象" isLeaf="false">
+            <elementDefinition Id="f9c7b474-85a0-4702-950e-f20aecce42c6" />
+            <flowNodeTargets>
+              <controlFlow Id="efc5f4b1-040e-4d61-925c-cf4d9422ee03" isLeaf="false">
+                <opaqueActionMoniker Id="3ecf659a-abff-445e-839f-db121c2e5c77" LastKnownName="修改对象数据" />
+                <elementDefinition Id="d1e80292-1fce-4a17-ad76-065d897ccd24" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="3ecf659a-abff-445e-839f-db121c2e5c77" name="修改对象数据" isLeaf="false">
+            <elementDefinition Id="7ddf0460-4bf7-46f5-b7af-72f97358238b" />
+            <flowNodeTargets>
+              <controlFlow Id="848850ee-81f1-41f8-ade0-30970786eba7" isLeaf="false">
+                <opaqueActionMoniker Id="fbe3c25f-9a12-488f-93a2-5c1b6b6c933b" LastKnownName="提交数据1" />
+                <elementDefinition Id="392ffe9f-e73c-4daf-a035-0c8671c95cf9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="fbe3c25f-9a12-488f-93a2-5c1b6b6c933b" name="提交数据1" isLeaf="false">
+            <elementDefinition Id="4e073f91-dea5-4f4a-8e46-e5a1c1fa6368" />
+            <flowNodeTargets>
+              <controlFlow Id="eb55c552-e68a-4e5a-8aea-3d714e4336cc" isLeaf="false">
+                <decisionNodeMoniker Id="29bdd9a8-1141-476e-b46e-be5ad0174a1f" LastKnownName="Decision2" />
+                <elementDefinition Id="80ddd3b1-0cd2-43f7-aa4a-a8b8e3a0a8dc" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="29bdd9a8-1141-476e-b46e-be5ad0174a1f" name="Decision2" isLeaf="false">
+            <elementDefinition Id="b06858f9-6fdc-4450-a615-a6258afef491" />
+            <flowNodeTargets>
+              <controlFlow Id="f9486117-2400-4726-8d3f-a93f9fd8e565" isLeaf="false">
+                <opaqueActionMoniker Id="b92fd760-0086-4c9a-8556-b9ada02a761c" LastKnownName="提交成功1" />
+                <elementDefinition Id="a2413898-b2f2-44a5-93fe-e63d3b9947d5" />
+              </controlFlow>
+              <controlFlow Id="7aa17789-9837-46dc-aa79-6cbe082de6a0" isLeaf="false">
+                <opaqueActionMoniker Id="3ecf659a-abff-445e-839f-db121c2e5c77" LastKnownName="修改对象数据" />
+                <elementDefinition Id="2fce75e0-0f8f-428b-b965-2c475343ddb5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="b92fd760-0086-4c9a-8556-b9ada02a761c" name="提交成功1" isLeaf="false">
+            <elementDefinition Id="74d0ea1e-4fb3-49e3-bffd-0a1e55e90d00" />
+            <flowNodeTargets>
+              <controlFlow Id="ad46f512-7a92-4030-bd7c-065010590521" isLeaf="false">
+                <joinNodeMoniker Id="cb73b1ff-8ca6-40d8-b24d-5e5f077289f3" LastKnownName="Join1" />
+                <elementDefinition Id="92bf0f43-0d04-4bbb-9b4f-de8fca89f1bc" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="76f7f906-7fd4-4e49-bb95-6741e6a39267" name="选择“登记失主”信息操作" isLeaf="false">
+            <elementDefinition Id="c621af2f-dfc2-4f14-91d3-a4381651e0ad" />
+            <flowNodeTargets>
+              <controlFlow Id="959c48aa-ed4f-4a92-9064-348e306e5633" isLeaf="false">
+                <opaqueActionMoniker Id="78d3f442-21c6-47f3-9b74-2d61fef3eb11" LastKnownName="获取接收选定领取物品的对象" />
+                <elementDefinition Id="a62b44f8-a870-4f66-8fc9-0f5720d60302" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="78d3f442-21c6-47f3-9b74-2d61fef3eb11" name="获取接收选定领取物品的对象" isLeaf="false">
+            <elementDefinition Id="8062ea9d-0a91-4119-bed1-3e010d7d46fe" />
+            <flowNodeTargets>
+              <controlFlow Id="d2028183-8415-4d14-9b5c-ca4bcf6341a5" isLeaf="false">
+                <opaqueActionMoniker Id="1554d085-646a-43b1-921d-04462cc6754a" LastKnownName="输入登记数据" />
+                <elementDefinition Id="1e81c133-64fb-4bb9-b069-cae700b4279f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="1554d085-646a-43b1-921d-04462cc6754a" name="输入登记数据" isLeaf="false">
+            <elementDefinition Id="5a5f8fb2-d956-464b-8648-db7759e4a794" />
+            <flowNodeTargets>
+              <controlFlow Id="7a93abbd-641d-4a18-b46f-6196d7c8c9e7" isLeaf="false">
+                <opaqueActionMoniker Id="e5d5034f-8079-4a42-b600-d4dae64b994a" LastKnownName="提交数据2" />
+                <elementDefinition Id="f582a4fd-dcaa-4976-be48-64bf2aaf0d78" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="e5d5034f-8079-4a42-b600-d4dae64b994a" name="提交数据2" isLeaf="false">
+            <elementDefinition Id="88b62ecb-fa4a-4d02-b186-89367b39d9ad" />
+            <flowNodeTargets>
+              <controlFlow Id="f666f078-4062-48c3-ae5b-cfbdd7023863" isLeaf="false">
+                <decisionNodeMoniker Id="79fc8d91-81af-43c1-8b97-63a28d0e4405" LastKnownName="Decision3" />
+                <elementDefinition Id="0b998de4-08ff-4945-8504-4dfb6b4e792e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="79fc8d91-81af-43c1-8b97-63a28d0e4405" name="Decision3" isLeaf="false">
+            <elementDefinition Id="0126f671-923c-4d26-8029-478c75234c72" />
+            <flowNodeTargets>
+              <controlFlow Id="81e487aa-65b8-400c-afb8-2791cbad7ec8" isLeaf="false">
+                <opaqueActionMoniker Id="83b82375-c4b0-45e5-8ff9-6f7935dd9e27" LastKnownName="提交成功2" />
+                <elementDefinition Id="4383094b-9cbf-4aa6-885e-71f7f719726e" />
+              </controlFlow>
+              <controlFlow Id="a931ecf9-e0c6-4331-9b55-9e3026ea227c" isLeaf="false">
+                <opaqueActionMoniker Id="1554d085-646a-43b1-921d-04462cc6754a" LastKnownName="输入登记数据" />
+                <elementDefinition Id="64cd6489-a778-4831-8d47-4d87f0aead5b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="83b82375-c4b0-45e5-8ff9-6f7935dd9e27" name="提交成功2" isLeaf="false">
+            <elementDefinition Id="6250b3b8-1b01-451e-9d28-896c7c136b06" />
+            <flowNodeTargets>
+              <controlFlow Id="27dd0aa2-a8bd-4d4f-adea-585264d03a38" isLeaf="false">
+                <joinNodeMoniker Id="cb73b1ff-8ca6-40d8-b24d-5e5f077289f3" LastKnownName="Join1" />
+                <elementDefinition Id="73492523-b2a5-4521-8b70-b3dd086971f1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode Id="cb73b1ff-8ca6-40d8-b24d-5e5f077289f3" name="Join1" isLeaf="false">
+            <elementDefinition Id="87fd58a2-30f7-4437-92ba-419c72fffb97" />
+            <flowNodeTargets>
+              <controlFlow Id="92e55c7d-80c5-4881-95c4-159aebd162f0" isLeaf="false">
+                <opaqueActionMoniker Id="f72d46a7-7d31-4509-83f1-3db6aa970f59" LastKnownName="提取失物招领信息" />
+                <elementDefinition Id="4c4972cf-4dea-44fa-93e9-31b398b20732" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <activityFinalNode Id="58ae4fdc-0480-4c7c-862d-138bbaf406b9" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="23208bbf-8017-4cf4-bac5-a0f6972fc8ba" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="0c62f88c-fe7c-4f5c-9d72-ce96324a807d" name="ModelingProject">
+    <elementDefinition Id="96cb32e6-6290-4041-a200-5ec44e3bd4ca" />
+    <profileInstances>
+      <packageHasProfileInstances Id="7addb4c8-8fea-4641-93f1-ede1d1488a6f">
+        <profileInstance Id="bb1d97ff-6055-46a8-be51-9c6a29ec5b94" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="b6ac70d6-12ba-46e6-8cf2-b992e0d35327">
+        <profileInstance Id="e8c0b06a-8f31-4eef-89e1-5d913f876168" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

@@ -1,0 +1,66 @@
+﻿@model IEnumerable<ALEXFW.Entity.Demos.Lost>
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<p style="margin-bottom: 0px;font-size: 30px;color: #999;">服务中心电话：1612123</p>
+@*<div class="panel-group admin-sideMenu" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-v">
+            <div class="panel-heading" role="tab" id="headingUser">
+                <h4 class="panel-title" style="color:#333">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseUser" aria-expanded="true" aria-controls="collapseUser">
+                        <i class="glyphicon glyphicon-user"></i>  维修服务
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseUser" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingUser">
+                <div class="panel-body">
+                    <a href="@Url.Action("index","accout")" title="" target="layout">网上保修 </a>
+                </div>
+            </div>
+        </div>
+    </div>*@
+<p>失物招领视图：</p>
+<div class="container">
+    <div class="row">
+
+        @foreach (var item in Model)
+        {
+            <div class="card col-sm-4 col-xs-4 ">
+                <a href="" style="color: #000;text-decoration:none;">
+                    <div style="margin: 10px 0;">
+                        <div>
+                            @if (item.image == null)
+                            {
+                                <img style="height:220px" class="img-responsive img-rounded" src="~/WebUploadFile/Image/timg.jpg">
+
+                            }
+                            else
+                            {
+                                <img style="height:220px" class="img-responsive img-rounded" src="@item.image" />
+                            }
+                        </div>
+                        <h4>@item.ItemsName</h4>
+                        <p style="margin-bottom: 0px;font-size: 14px;color: #999;">说明：@item.Note</p>
+                        <p style="margin-bottom: 0px;font-size: 14px;color: #999;">地址：@item.Place</p>
+                        <p style="margin-bottom: 0px;font-size: 14px;color: #999;">是否被领取：@item.Choose</p>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(".card").hover(
+            function () {
+                $(this).css("background-color", "#eee");
+            },
+            function () {
+                $(this).css("background-color", "#fff");
+            }
+        );
+    });
+</script>
+

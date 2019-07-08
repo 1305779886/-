@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerDiagram dslVersion="1.0.0.0" Id="05e30d2e-72dc-4e84-98b0-8802238f5cad" absoluteBounds="0, 0, 11, 8.5" name="产品透视图">
+  <layerModelMoniker Id="0108ae30-9944-480c-a622-545424a1c032" />
+  <nestedChildShapes>
+    <layerShape Id="0d985be3-843c-4a5b-8e96-be539ca622e7" absoluteBounds="1.125, 1.125, 6.875, 4.5" customColor="161, 199, 231">
+      <layerMoniker Id="2888bcbd-88ce-4add-b4cb-daa6588aa9c9" />
+      <nestedChildShapes>
+        <layerShape Id="9ad88754-5f89-44e9-90d8-1d6583e06964" absoluteBounds="1.375, 1.5, 1.25, 0.25" customColor="161, 199, 231">
+          <layerMoniker Id="fa134e73-6012-4cfa-b993-7e5821437f31" />
+        </layerShape>
+        <layerShape Id="52dfe9f9-50b2-4cc2-a0fd-192ea939faaf" absoluteBounds="2.875, 1.5, 1.375, 0.25" customColor="161, 199, 231">
+          <layerMoniker Id="ad4178c0-6516-49c2-87b1-5b709cd13c13" />
+        </layerShape>
+        <layerShape Id="50d263cf-c126-47b5-a3cb-35b96fd05de9" absoluteBounds="4.625, 1.5, 1.375, 0.25" customColor="161, 199, 231">
+          <layerMoniker Id="5fe808c3-1d56-4525-800b-eb8ede4f5197" />
+        </layerShape>
+        <layerShape Id="1eb96811-8c9c-4799-8efc-7aa069c8ce1d" absoluteBounds="6.125, 1.5, 1.5, 0.25" customColor="161, 199, 231">
+          <layerMoniker Id="ad6b613e-a1f9-4269-b870-013186da4d0a" />
+        </layerShape>
+        <layerShape Id="9df73665-23f9-4a23-9a71-fc557aec68fc" absoluteBounds="1.25, 2, 6.625, 1.625" customColor="161, 199, 231">
+          <layerMoniker Id="8bb7393c-af88-44fd-9208-70b73dd449f3" />
+          <nestedChildShapes>
+            <layerShape Id="c1661345-bbc6-4315-81ee-ea366448bb54" absoluteBounds="1.5, 2.25, 1.375, 0.25" customColor="161, 199, 231">
+              <layerMoniker Id="e0369c8f-0560-4e4c-85a5-4869b973cb04" />
+            </layerShape>
+            <layerShape Id="aa4432c6-a00f-4987-a1b3-f392a8269f17" absoluteBounds="6.25, 2.25, 1.375, 0.25" customColor="161, 199, 231">
+              <layerMoniker Id="c0d29269-90e7-43a5-8b48-f847d78d703b" />
+            </layerShape>
+            <layerShape Id="16c3ebdb-b01a-4a1d-8304-068edb794e3b" absoluteBounds="1.5, 2.75, 1.375, 0.25" customColor="161, 199, 231">
+              <layerMoniker Id="a7e861ac-f191-4598-9b0d-bd21f1d5b4e3" />
+            </layerShape>
+            <layerShape Id="4d2d7acb-66aa-411c-a33f-d201cfdeff4a" absoluteBounds="6.25, 2.875, 1.5, 0.25" customColor="161, 199, 231">
+              <layerMoniker Id="74758bb7-1891-4946-a95a-e7f9f6ea06dc" />
+            </layerShape>
+            <layerShape Id="a627a2dc-8dcd-421e-9236-f05aee4e447a" absoluteBounds="3.375, 3.25, 2, 0.25" customColor="161, 199, 231">
+              <layerMoniker Id="3cdee724-476e-436d-97bf-ea4d3bef090e" />
+            </layerShape>
+          </nestedChildShapes>
+        </layerShape>
+        <layerShape Id="b913167c-206f-4bb9-bef6-e291a41211b7" absoluteBounds="1.25, 3.75, 6.625, 1.75" customColor="161, 199, 231">
+          <layerMoniker Id="7535f681-d72a-4d08-9e9b-dc417217db2d" />
+          <nestedChildShapes>
+            <layerShape Id="358eec73-04d6-4237-b2ae-48cbe24d2456" absoluteBounds="1.625, 4.125, 2, 0.25" customColor="161, 199, 231">
+              <layerMoniker Id="f57950e2-cebe-41e4-b22c-e48d4c602f42" />
+            </layerShape>
+            <layerShape Id="241f8d26-c075-448c-bb35-68164a289e60" absoluteBounds="5.375, 4.125, 2, 0.25" customColor="161, 199, 231">
+              <layerMoniker Id="3b07afb5-1d89-4d68-920a-4fff89e83475" />
+            </layerShape>
+            <layerShape Id="50307337-e589-4853-825c-4e662ceac78f" absoluteBounds="3.125, 4.625, 3.25, 0.25" customColor="161, 199, 231">
+              <layerMoniker Id="61a9190e-f11b-4d13-af81-bdd841ca2a58" />
+            </layerShape>
+            <layerShape Id="624f1096-3da9-4554-b940-03d258222741" absoluteBounds="3.125, 5, 3.25, 0.25" customColor="161, 199, 231">
+              <layerMoniker Id="b9671dd7-ded1-4533-a985-d4eb9b011ce9" />
+            </layerShape>
+          </nestedChildShapes>
+        </layerShape>
+      </nestedChildShapes>
+    </layerShape>
+  </nestedChildShapes>
+</layerDiagram>

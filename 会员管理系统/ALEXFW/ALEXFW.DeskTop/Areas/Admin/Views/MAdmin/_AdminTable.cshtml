@@ -1,0 +1,53 @@
+﻿@model EntityViewModel<ALEXFW.Entity.UserAndRole.Admin>
+
+<div class="panel-body">
+    <table class="table table-bordered table-hover">
+        <thead>
+        <tr>
+            <td title="工号">工号</td>
+            <td title="登录名">登录名</td>
+            <td title="店铺">店铺</td>
+            <td title="角色">角色</td>
+            <td title="操作">操作</td>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model.Items)
+        {
+            <tr>
+                <td>@item.EmployeeCode</td>
+                <td>@item.Username</td>
+                <td>@item.Department.DepartmentName</td>
+                <td>@item.Group.ToString()</td>
+                <td class="text-center" style="width: 64px;">
+                    <div class="btn-group btn-group-xs">
+                        <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li>
+                                <a class="btn" href="@Html.Raw(Url.Action("Detail", new {id = item.Index}))"><i class="glyphicon glyphicon-list-alt"></i>明细</a>
+                            </li>
+                            <li>
+                                <a class="btn" href="@Html.Raw(Url.Action("Edit", new {id = item.Index}))"><i class="glyphicon glyphicon-edit"></i>编辑</a>
+                            </li>
+                            <li>
+                                <a class="btn" href="#"><i class="glyphicon glyphicon-remove"></i>禁用</a>
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    
+    <div class="row">
+        <div class="col-md-4">
+            @Html.PaginationButton(Model)
+        </div>
+        <div class="col-md-8 text-right">
+            @Html.Pagination(Model)
+        </div>
+    </div>
+</div>

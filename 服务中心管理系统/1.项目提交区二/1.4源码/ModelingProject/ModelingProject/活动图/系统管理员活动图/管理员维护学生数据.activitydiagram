@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="1cb20f1c-42b3-4203-980a-2518b658b1f6" name="管理员维护学生数据" linkedPackageId="b0b37c5d-0be4-4445-a005-3578853cf048" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="a21423cb-0132-41ea-b717-f39211e75027">
+      <elementDefinition Id="a19d1f6a-73a6-4c5d-b080-1cd26bc56316" />
+      <body>管理员进入系统管理</body>
+      <annotatedElements>
+        <initialNodeMoniker Id="479af252-e660-428b-80bd-6e0a0a8031cb" LastKnownName="Initial1" />
+      </annotatedElements>
+    </comment>
+    <comment Id="42363c19-6074-4bf7-9c89-5a876823c975">
+      <elementDefinition Id="5f434736-34d1-4e2d-8849-f94adbb5b2eb" />
+      <body>继续其他操作</body>
+      <annotatedElements>
+        <activityFinalNodeMoniker Id="6b61c319-3626-4c8d-aac7-eecac7827e86" LastKnownName="ActivityFinal1" />
+      </annotatedElements>
+    </comment>
+    <comment Id="1908edf8-a7c2-4f8d-aa4d-e3df9038ba05">
+      <elementDefinition Id="67e6b349-68e1-4d2b-8700-b3cb94631099" />
+      <body>提交失败</body>
+      <annotatedElements>
+        <decisionNodeMoniker Id="9ac963dc-d422-43a9-9623-61c9d4b79be4" LastKnownName="Decision1" />
+      </annotatedElements>
+    </comment>
+    <comment Id="6fd105f4-547b-4d8a-bf39-402f8dd663cb">
+      <elementDefinition Id="b7158a16-99aa-47a7-bb8a-c21a468a1c55" />
+      <body>提交成功</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="03072d0d-f280-4f9a-9574-3683b3418dd7" LastKnownName="新增成功" />
+      </annotatedElements>
+    </comment>
+    <comment Id="e9a20463-0aed-4b3a-b39b-99681baeda7d">
+      <elementDefinition Id="b6cdc1ab-dd25-4a93-9932-fb6ad1828f15" />
+      <body>提交失败</body>
+      <annotatedElements>
+        <decisionNodeMoniker Id="f1e85130-3452-4d6e-ae4f-3d1c4eb776bd" LastKnownName="Decision11" />
+      </annotatedElements>
+    </comment>
+    <comment Id="602045a8-1492-43c4-8e44-9565245a87d3">
+      <elementDefinition Id="34c34a68-e6b2-46e5-9c9b-4b3a274d02e3" />
+      <body>提交成功</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="3d790f63-85bf-4dcc-94a1-3ed8b09d965b" LastKnownName="编辑成功" />
+      </annotatedElements>
+    </comment>
+    <comment Id="affa42a6-7396-461b-9d79-c677e9717504">
+      <elementDefinition Id="d2ab827a-1424-4b10-b979-ee562632041e" />
+      <body>取消删除</body>
+      <annotatedElements>
+        <decisionNodeMoniker Id="50226020-a82a-4e5c-a13c-3b1032c7a010" LastKnownName="Decision2" />
+      </annotatedElements>
+    </comment>
+    <comment Id="a27540a2-f382-487b-8238-1fda0e6bcaf8">
+      <elementDefinition Id="4eed1d8d-0e8e-4873-952c-29149ba12ffe" />
+      <body>查看明细结束</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="590b376a-f174-489e-b386-049003efd0f1" LastKnownName="提取学生信息数据内容" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="52c707e4-50d8-457d-aac8-3e899a374d63" name="管理员维护学生数据" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="9fe41681-3a8a-4000-b569-3b430a44dffd" />
+        <nodes>
+          <opaqueAction Id="4a324799-b64a-4410-bad8-b9254590da6a" name="选择“新增”操作" isLeaf="false">
+            <elementDefinition Id="18902bbe-ce6b-4fad-8f6b-b42ac2bede91" />
+            <flowNodeTargets>
+              <controlFlow Id="d68e30d6-830e-427a-a8bd-71b6389f4a3b" isLeaf="false">
+                <opaqueActionMoniker Id="21ab3a78-693a-4ae1-a9b3-1c18297edec2" LastKnownName="输入学生信息数据" />
+                <elementDefinition Id="4e085975-5aeb-44a7-a90f-ad48aa9db13d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="253af530-6913-4640-a9be-678710bdcdd3" name="选择“查看明细“操作" isLeaf="false">
+            <elementDefinition Id="2a7c9b16-9995-4c07-a279-f268c0d0d4a2" />
+            <flowNodeTargets>
+              <controlFlow Id="af0165df-77eb-47bd-b601-493be2552be0" isLeaf="false">
+                <opaqueActionMoniker Id="4e640dce-1f1e-4ab2-95e1-c547f3301979" LastKnownName="获取接收选定的学生信息数据" />
+                <elementDefinition Id="d728bc17-f71f-4a42-bfcb-62369a0beea2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="e28a7675-3549-4269-b34d-7a6730417794" name="选择”编辑“操作" isLeaf="false">
+            <elementDefinition Id="5a578ecb-bcba-47fb-8ac4-29b104febfb0" />
+            <flowNodeTargets>
+              <controlFlow Id="3b656cca-b505-455a-82b5-17c2e6d50524" isLeaf="false">
+                <opaqueActionMoniker Id="1d764d8e-e45a-4a89-9ea4-542177f2a171" LastKnownName="获取接受选定的学生信息数据" />
+                <elementDefinition Id="ed6bb281-64cf-459b-8123-f72278dfa136" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ae472f5c-41ed-433b-9f1d-ddcaa4d08b33" name="选择”删除“操作" isLeaf="false">
+            <elementDefinition Id="06311b31-235d-4d67-8372-98153de6265e" />
+          </opaqueAction>
+          <opaqueAction Id="4e640dce-1f1e-4ab2-95e1-c547f3301979" name="获取接收选定的学生信息数据" isLeaf="false">
+            <elementDefinition Id="19fc6365-ea8f-476f-ad01-bf71f23d2a59" />
+            <flowNodeTargets>
+              <controlFlow Id="636a9b1d-5efe-4a2f-9277-1b4349ae774d" isLeaf="false">
+                <opaqueActionMoniker Id="590b376a-f174-489e-b386-049003efd0f1" LastKnownName="提取学生信息数据内容" />
+                <elementDefinition Id="ee9c1a32-404b-4bec-9ffe-afa270712dd3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="590b376a-f174-489e-b386-049003efd0f1" name="提取学生信息数据内容" isLeaf="false">
+            <elementDefinition Id="b45536ad-9f32-486a-ab5c-377bdd8965fd" />
+            <flowNodeTargets>
+              <controlFlow Id="6106c430-7dae-43e0-8527-c5430b911282" isLeaf="false">
+                <joinNodeMoniker Id="01a46aca-b77b-4e3f-9d98-66efd2be86a6" LastKnownName="Join1" />
+                <elementDefinition Id="65cc9ced-723d-4c4a-8e30-45f3f33345cf" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="21ab3a78-693a-4ae1-a9b3-1c18297edec2" name="输入学生信息数据" isLeaf="false">
+            <elementDefinition Id="c3764457-c156-4ffd-8e0a-580609125b03" />
+            <flowNodeTargets>
+              <controlFlow Id="cc56f483-4a1e-40fe-990e-5918268d51eb" isLeaf="false">
+                <opaqueActionMoniker Id="b613009c-dbab-49b5-93d3-ac981c16ec62" LastKnownName="提交发送" />
+                <elementDefinition Id="6bc26d7f-91b8-495a-9365-6b9943afaed6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b613009c-dbab-49b5-93d3-ac981c16ec62" name="提交发送" isLeaf="false">
+            <elementDefinition Id="14ae38a5-fb2d-474c-b6fd-6e6a7b840e4a" />
+            <flowNodeTargets>
+              <controlFlow Id="ebf8894d-c4cc-4f2c-a34d-6de35c535a63" isLeaf="false">
+                <decisionNodeMoniker Id="9ac963dc-d422-43a9-9623-61c9d4b79be4" LastKnownName="Decision1" />
+                <elementDefinition Id="9380020d-b213-4514-b3a5-54aee9339d5f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="1d764d8e-e45a-4a89-9ea4-542177f2a171" name="获取接受选定的学生信息数据" isLeaf="false">
+            <elementDefinition Id="d9d429d7-ca6c-4f4f-8317-480429ce523a" />
+            <flowNodeTargets>
+              <controlFlow Id="4bbfc5e1-30c5-4dbf-81bf-2d1d58711345" isLeaf="false">
+                <opaqueActionMoniker Id="f4381aad-5883-40ac-b960-85a453ccef68" LastKnownName="修改学生数据" />
+                <elementDefinition Id="da896d5e-d412-4278-88d9-559cb91a1e84" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="f4381aad-5883-40ac-b960-85a453ccef68" name="修改学生数据" isLeaf="false">
+            <elementDefinition Id="c4bff310-0ff1-4704-b846-f54e0d46bc62" />
+            <flowNodeTargets>
+              <controlFlow Id="a3c52598-c519-43a1-8078-d71ef954ebae" isLeaf="false">
+                <opaqueActionMoniker Id="7f7d6dfa-e942-48dd-85d8-8402b0036047" LastKnownName="提交发送" />
+                <elementDefinition Id="9f909a28-10a3-4e47-9613-f89d5faa138e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="7f7d6dfa-e942-48dd-85d8-8402b0036047" name="提交发送" isLeaf="false">
+            <elementDefinition Id="f5a1d7f3-0dab-47db-8b38-a36eb5aaf1d6" />
+            <flowNodeTargets>
+              <controlFlow Id="004938f7-c6f4-4332-bf1f-1e01da77b0bd" isLeaf="false">
+                <decisionNodeMoniker Id="f1e85130-3452-4d6e-ae4f-3d1c4eb776bd" LastKnownName="Decision11" />
+                <elementDefinition Id="e79e2376-0a68-44ca-bbf8-15d47f5957f2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <initialNode Id="479af252-e660-428b-80bd-6e0a0a8031cb" name="Initial1" isLeaf="false">
+            <elementDefinition Id="c14b5188-6300-4230-ae28-b86d6b0bdbe0" />
+            <flowNodeTargets>
+              <controlFlow Id="ffdf1492-e504-4acd-8180-3bc1edf083b2" isLeaf="false">
+                <opaqueActionMoniker Id="80afda05-56f3-4f04-a79a-0649c00d9ecf" LastKnownName="提取维护学生数据信息报表" />
+                <elementDefinition Id="444f013c-84fd-4ae8-b57a-6385a45ab2f3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode Id="6b61c319-3626-4c8d-aac7-eecac7827e86" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="4d81744d-6a87-4383-bb54-a461c4e67242" />
+          </activityFinalNode>
+          <opaqueAction Id="80afda05-56f3-4f04-a79a-0649c00d9ecf" name="提取维护学生数据信息报表" isLeaf="false">
+            <elementDefinition Id="6a5d0b78-ea3f-4149-b72f-f98ccb2c60bc" />
+            <flowNodeTargets>
+              <controlFlow Id="3191908c-807e-424d-92f0-33f1fde6c59c" isLeaf="false">
+                <activityFinalNodeMoniker Id="6b61c319-3626-4c8d-aac7-eecac7827e86" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="6400890d-c9b3-4db6-ad72-00078cd7cf7f" />
+              </controlFlow>
+              <controlFlow Id="ccad88d6-86c5-4262-8347-facc19932ad1" isLeaf="false">
+                <forkNodeMoniker Id="04277e6f-ac5a-4d19-8e17-d9ed9be79b28" LastKnownName="Fork1" />
+                <elementDefinition Id="f0ba1bdb-fc86-4b2e-baa3-ab4872fbb695" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode Id="01a46aca-b77b-4e3f-9d98-66efd2be86a6" name="Join1" isLeaf="false">
+            <elementDefinition Id="8db47e28-a820-451d-b34d-dffdb7f9a7f7" />
+            <flowNodeTargets>
+              <controlFlow Id="021c7b41-63f2-4297-a592-39df9e4db458" isLeaf="false">
+                <opaqueActionMoniker Id="80afda05-56f3-4f04-a79a-0649c00d9ecf" LastKnownName="提取维护学生数据信息报表" />
+                <elementDefinition Id="3a82d9a8-3ea6-4bf5-ad5c-9dcb99de4ed9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <decisionNode Id="9ac963dc-d422-43a9-9623-61c9d4b79be4" name="Decision1" isLeaf="false">
+            <elementDefinition Id="4192268f-051d-4e5a-951b-fc62d041e8a4" />
+            <flowNodeTargets>
+              <controlFlow Id="88902a2d-caff-448f-a80f-3c63c6ef443a" isLeaf="false">
+                <opaqueActionMoniker Id="03072d0d-f280-4f9a-9574-3683b3418dd7" LastKnownName="新增成功" />
+                <elementDefinition Id="0939957f-179f-4e20-b9ac-3d0141ead763" />
+              </controlFlow>
+              <controlFlow Id="b8f179bf-40d4-4827-bd0e-5c4774df55a6" isLeaf="false">
+                <opaqueActionMoniker Id="21ab3a78-693a-4ae1-a9b3-1c18297edec2" LastKnownName="输入学生信息数据" />
+                <elementDefinition Id="9758a8bc-441f-41b5-8926-92c5e947f077" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="03072d0d-f280-4f9a-9574-3683b3418dd7" name="新增成功" isLeaf="false">
+            <elementDefinition Id="ed988d38-446b-4296-aaf6-5c96efafc6fc" />
+            <flowNodeTargets>
+              <controlFlow Id="3679a8de-bb87-475e-a2d4-8aa4b2bd11bf" isLeaf="false">
+                <joinNodeMoniker Id="01a46aca-b77b-4e3f-9d98-66efd2be86a6" LastKnownName="Join1" />
+                <elementDefinition Id="3723643f-8f03-40bd-815d-e7fffd6c2166" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="f1e85130-3452-4d6e-ae4f-3d1c4eb776bd" name="Decision11" isLeaf="false">
+            <elementDefinition Id="8a68486b-5f99-465b-a433-3310d7b765bc" />
+            <flowNodeTargets>
+              <controlFlow Id="0f7a0721-7193-4784-af4b-6021a0c31fde" isLeaf="false">
+                <opaqueActionMoniker Id="3d790f63-85bf-4dcc-94a1-3ed8b09d965b" LastKnownName="编辑成功" />
+                <elementDefinition Id="a19be717-91c9-45f4-9f45-bfe6bdfda4a9" />
+              </controlFlow>
+              <controlFlow Id="974f2472-058f-4ef5-8a44-38c2d5e336a9" isLeaf="false">
+                <opaqueActionMoniker Id="f4381aad-5883-40ac-b960-85a453ccef68" LastKnownName="修改学生数据" />
+                <elementDefinition Id="5672fdfb-ad7f-4f63-a816-42ad1cacf748" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="3d790f63-85bf-4dcc-94a1-3ed8b09d965b" name="编辑成功" isLeaf="false">
+            <elementDefinition Id="4bc692a4-14dc-464d-b4b1-c8ddd2cf2418" />
+            <flowNodeTargets>
+              <controlFlow Id="7182edd1-6321-4a6c-ab8d-a3765a31ef6a" isLeaf="false">
+                <joinNodeMoniker Id="01a46aca-b77b-4e3f-9d98-66efd2be86a6" LastKnownName="Join1" />
+                <elementDefinition Id="dc350951-96d8-46e9-a547-0669cdef703b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="0fb0d3e4-0d01-40da-97c2-3a1a05593c2f" name="选定要删除的学生信息数据" isLeaf="false">
+            <elementDefinition Id="bdf4f6e0-54bc-4d32-8f0f-50999a47f390" />
+            <flowNodeTargets>
+              <controlFlow Id="e91a41b7-9494-49bc-9e55-a00fc2c8b948" isLeaf="false">
+                <opaqueActionMoniker Id="c974d4b6-c6d6-42a0-848f-15155ab620a5" LastKnownName="系统对删除操作发出警告" />
+                <elementDefinition Id="2a06a62d-2b33-4b03-807f-5612a5005bd8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="af843bf7-a8c8-40a0-825b-3e605d4e5719" name="删除成功" isLeaf="false">
+            <elementDefinition Id="2573eb7a-bb75-4483-bb67-03a7c08dcc05" />
+            <flowNodeTargets>
+              <controlFlow Id="31016641-f5e3-440c-80cb-0a803c043e20" isLeaf="false">
+                <joinNodeMoniker Id="01a46aca-b77b-4e3f-9d98-66efd2be86a6" LastKnownName="Join1" />
+                <elementDefinition Id="75fa0e4e-1f50-4e1d-a570-dbcf839b4b84" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c974d4b6-c6d6-42a0-848f-15155ab620a5" name="系统对删除操作发出警告" isLeaf="false">
+            <elementDefinition Id="d450e485-aaa3-4209-9119-a8f475489fe8" />
+            <flowNodeTargets>
+              <controlFlow Id="26300f52-d7b2-43b4-be02-011970d7502d" isLeaf="false">
+                <decisionNodeMoniker Id="50226020-a82a-4e5c-a13c-3b1032c7a010" LastKnownName="Decision2" />
+                <elementDefinition Id="be626c1d-5792-43b7-987f-67fae5e293b8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="50226020-a82a-4e5c-a13c-3b1032c7a010" name="Decision2" isLeaf="false">
+            <elementDefinition Id="1473ec5d-04df-4935-8abd-e1e731bbd920" />
+            <flowNodeTargets>
+              <controlFlow Id="3d042dac-3c3f-4749-b6df-25d06acee79c" isLeaf="false">
+                <opaqueActionMoniker Id="af843bf7-a8c8-40a0-825b-3e605d4e5719" LastKnownName="删除成功" />
+                <elementDefinition Id="a7023fc6-8f68-4278-9bc8-40f0934e04df" />
+              </controlFlow>
+              <controlFlow Id="8b97ad55-2254-41a5-904c-8fcd11885a10" isLeaf="false">
+                <opaqueActionMoniker Id="0fb0d3e4-0d01-40da-97c2-3a1a05593c2f" LastKnownName="选定要删除的学生信息数据" />
+                <elementDefinition Id="2c3375c6-9909-4c9e-b5c6-f4eae2210180" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <forkNode Id="04277e6f-ac5a-4d19-8e17-d9ed9be79b28" name="Fork1" isLeaf="false">
+            <elementDefinition Id="6c911a83-b573-4aa9-a1f4-91ba78d82da5" />
+            <flowNodeTargets>
+              <controlFlow Id="75dba39e-70c6-4e2f-889e-fbced9a293be" isLeaf="false">
+                <opaqueActionMoniker Id="4a324799-b64a-4410-bad8-b9254590da6a" LastKnownName="选择“新增”操作" />
+                <elementDefinition Id="301a114b-df09-4d22-b459-077847d83c5c" />
+              </controlFlow>
+              <controlFlow Id="39cc37e3-f801-49b7-b771-ab3f043d7598" isLeaf="false">
+                <opaqueActionMoniker Id="253af530-6913-4640-a9be-678710bdcdd3" LastKnownName="选择“查看明细“操作" />
+                <elementDefinition Id="075ec13f-946e-4f0f-9ec6-a9052fb3f261" />
+              </controlFlow>
+              <controlFlow Id="928aed13-9076-420b-b0ce-e6bdc1a205d2" isLeaf="false">
+                <opaqueActionMoniker Id="e28a7675-3549-4269-b34d-7a6730417794" LastKnownName="选择”编辑“操作" />
+                <elementDefinition Id="c21804b8-4acb-492d-9ac5-fb15fa5612b8" />
+              </controlFlow>
+              <controlFlow Id="7497beca-3a06-4f19-8859-4f641f2451f1" isLeaf="false">
+                <opaqueActionMoniker Id="ae472f5c-41ed-433b-9f1d-ddcaa4d08b33" LastKnownName="选择”删除“操作" />
+                <elementDefinition Id="4fadfd47-5878-490d-b454-9e437b0777e1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="b0b37c5d-0be4-4445-a005-3578853cf048" name="ModelingProject">
+    <elementDefinition Id="96cb32e6-6290-4041-a200-5ec44e3bd4ca" />
+    <profileInstances>
+      <packageHasProfileInstances Id="83473cb3-c647-471a-8b42-1fbfbc4d0dcd">
+        <profileInstance Id="1eba0c11-7a5f-422e-a583-0faabdea5eb6" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="ad2b343e-ba57-44e3-af57-d36f9f9f2544">
+        <profileInstance Id="ac047418-7ad1-4e41-82c5-f960cb4bffad" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

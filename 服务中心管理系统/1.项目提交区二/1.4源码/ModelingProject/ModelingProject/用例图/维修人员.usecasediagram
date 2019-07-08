@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="7249060c-ef6d-4872-91a5-8a69b59e3027" name="维修人员" linkedPackageId="d5ced44c-149b-49bf-bd08-a5a30933f083" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="74c09743-2dc0-4368-88a2-eba0c076a130" name="维修人员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f87198d8-5510-4bef-bfa7-f905134a3746" />
+        <targetEnds>
+          <association Id="d332c7e5-f990-4628-8cc8-b1ca58f08ffa" isDerived="false" sourceEndRoleName="店铺管理员" targetEndRoleName="系统登录" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="498cfa0b-e1eb-4c26-9be7-ff1bb4569a36" LastKnownName="后台维修数据" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6f479d7e-5daf-48b4-9262-42ccdad2e71b" name="店铺管理员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1cf5fbcd-d622-4697-b55c-bf538c04af22" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9f227205-e15c-4d75-8677-0236576fcd11" name="系统登录" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c023fa3f-dfd3-41a6-ad35-955f5c9c1de6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5c2fea75-a005-4d67-baa1-3335cd596b4d" />
+          </association>
+          <association Id="d10d1173-dfad-4712-9b33-fe9874140728" isDerived="false" sourceEndRoleName="店长" targetEndRoleName="本店铺的会员的管理与维护" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d32dfebf-2523-40a9-be18-94c163f4193b" LastKnownName="信息反馈" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="631ceabe-a846-4216-b9bf-9d68ea9970b4" name="店长" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b7586e3f-3317-4d2e-b101-75650a6a9265" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="64b2d4c5-a633-494a-9545-92db91a50708" name="本店铺的会员的管理与维护" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e287c104-e1ff-45e8-884b-188bde993c34" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e92b44ab-5108-47a7-b284-b58548076cbb" />
+          </association>
+          <association Id="11bf3d12-55cb-4468-936f-9db807bd2be2" isDerived="false" sourceEndRoleName="维修人员" targetEndRoleName="用户认证" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4d6f5b49-1778-4379-b918-21ec10001323" LastKnownName="用户认证" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="25f53cb1-7d0d-4f1d-bbc4-640174b68214" name="维修人员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="56f16a65-0f77-4797-a504-52db06ea4872" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b53c8039-8d63-40cd-955c-57cf235c3417" name="用户认证" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4d319ac1-540e-43de-a4f4-36aee17f91e0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="58720834-ab43-4119-aaf0-f3a787bf86c6" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="498cfa0b-e1eb-4c26-9be7-ff1bb4569a36" name="后台维修数据" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bc537963-d198-4f39-a41a-eb49961254b7" />
+        <extendedCases>
+          <extend Id="09aa6830-25b1-41ec-b14a-cd71b8e95442">
+            <useCaseMoniker Id="a8eb43c8-bb1f-4c68-bc25-5c32f52062df" LastKnownName="只能查看和浏览数据" />
+            <elementDefinition Id="615646fd-01b7-40cd-8cba-ec411833723b" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d32dfebf-2523-40a9-be18-94c163f4193b" name="信息反馈" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="606349cd-323d-4876-90e1-807b90b37f97" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a8eb43c8-bb1f-4c68-bc25-5c32f52062df" name="只能查看和浏览数据" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b7f61f9c-a62a-47e9-ac4b-93657542067e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4d6f5b49-1778-4379-b918-21ec10001323" name="用户认证" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4073150a-657a-49a1-8aca-568461900167" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="d5ced44c-149b-49bf-bd08-a5a30933f083" name="ModelingProject">
+    <elementDefinition Id="96cb32e6-6290-4041-a200-5ec44e3bd4ca" />
+    <profileInstances>
+      <packageHasProfileInstances Id="adbdf5d7-e04d-414b-b83f-1833700f6dd6">
+        <profileInstance Id="e10c6685-234f-4c47-9f65-c8ae9dfcdd0c" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="96acaad3-418f-4e42-810c-9887afeb473c">
+        <profileInstance Id="eded7232-d4f2-4e9a-a022-7e3127aa230e" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

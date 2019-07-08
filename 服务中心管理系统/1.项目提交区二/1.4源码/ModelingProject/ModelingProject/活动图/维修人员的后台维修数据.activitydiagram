@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="d83db796-2104-4bf5-81c2-2db16cb5a171" name="维修人员的后台维修数据" linkedPackageId="a89fd23c-d0cc-4abf-b3d3-617f4bcaaa73" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="2527963e-2ca4-48a6-9e4f-b7ccfbe47f39">
+      <elementDefinition Id="bff4d52f-b56d-49dd-be2f-e5b16c37f0f2" />
+      <body>维修人员进入后台管理</body>
+      <annotatedElements>
+        <initialNodeMoniker Id="de0daa90-a1b4-4650-9834-93189426e10a" LastKnownName="Initial1" />
+      </annotatedElements>
+    </comment>
+    <comment Id="3869b64f-0c13-4eba-a8ee-cf2d6cccac53">
+      <elementDefinition Id="d6f2a527-ef13-49cd-b83a-ecfa124356e5" />
+      <body>维修人员修理后点击完成维修数据</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="9d4e4974-19cf-4aad-9198-1f541fac9a55" LastKnownName="点击完成维修数据" />
+      </annotatedElements>
+    </comment>
+    <comment Id="c29f1769-284d-4893-a440-77573fca3979">
+      <elementDefinition Id="a09cd2cb-87d7-4438-ac1b-993e13720bf1" />
+      <body>继续其他操作</body>
+      <annotatedElements>
+        <activityFinalNodeMoniker Id="7afe2eda-e2fc-41f3-8a20-6b95e4321036" LastKnownName="ActivityFinal1" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="92850ec3-414b-4985-9db3-f728600a95f9">
+      <profileInstance Id="537bcfbb-c891-479f-9d27-50918753b63e" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5ed5eea5-794b-4a53-b508-de7bb3a41e1c">
+      <profileInstance Id="031e7fe9-fbf8-4b40-8eb3-d30bcb151f5a" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="9fc0d267-0b26-4ab9-bc97-c16cc47ddb7d" name="维修人员的后台维修数据" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="41da8027-ac50-4d09-94cc-540f74af1d12" />
+        <nodes>
+          <opaqueAction Id="879357ab-6692-447a-aaf7-411c0da0091e" name="提取网上维修数据与信息反馈" isLeaf="false">
+            <elementDefinition Id="2ff40ef2-46e7-46ef-860e-a653d3b40f20" />
+            <flowNodeTargets>
+              <controlFlow Id="9ff0a045-d117-4285-9204-00ba7d8e4553" isLeaf="false">
+                <forkNodeMoniker Id="53d47bf9-97e1-46d3-963e-414787fa1e33" LastKnownName="Fork1" />
+                <elementDefinition Id="6e128257-40a1-4695-b78b-e2e634e163bc" />
+              </controlFlow>
+              <controlFlow Id="ed4779bf-5343-454b-a541-5f1b342ee295" isLeaf="false">
+                <activityFinalNodeMoniker Id="7afe2eda-e2fc-41f3-8a20-6b95e4321036" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="1b8d1191-e319-4bd1-bc95-63c780704ea8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <initialNode Id="de0daa90-a1b4-4650-9834-93189426e10a" name="Initial1" isLeaf="false">
+            <elementDefinition Id="7ed16086-ee5d-46d8-b924-9a18d8fb81be" />
+            <flowNodeTargets>
+              <controlFlow Id="9e598895-2568-4403-99c4-260ad362e70a" isLeaf="false">
+                <opaqueActionMoniker Id="879357ab-6692-447a-aaf7-411c0da0091e" LastKnownName="提取网上维修数据与信息反馈" />
+                <elementDefinition Id="7d8a731a-f580-4b5e-ab36-0f3586bbce0b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <forkNode Id="53d47bf9-97e1-46d3-963e-414787fa1e33" name="Fork1" isLeaf="false">
+            <elementDefinition Id="1a8fb31b-e32f-49da-a2f8-e3f1a90b8225" />
+            <flowNodeTargets>
+              <controlFlow Id="faabaf20-e0f7-4cd4-ab72-822d3c75f3ba" isLeaf="false">
+                <opaqueActionMoniker Id="cab91322-9f04-4a49-be9d-4500d5f536b5" LastKnownName="选择查看“维修数据”信息操作" />
+                <elementDefinition Id="183ea9a3-cad0-42fd-8300-84848a5e22ac" />
+              </controlFlow>
+              <controlFlow Id="339e2d4c-2f1e-49a6-b321-3b1e53986bd0" isLeaf="false">
+                <opaqueActionMoniker Id="dfebb586-c6be-4f96-a125-bd8830ea7cef" LastKnownName="选择对“投诉信息的反馈”操作" />
+                <elementDefinition Id="7a9b5be2-e474-43ff-af68-5b5956feb31b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction Id="cab91322-9f04-4a49-be9d-4500d5f536b5" name="选择查看“维修数据”信息操作" isLeaf="false">
+            <elementDefinition Id="86342067-cf20-44c7-bc25-0c789f6abd5c" />
+            <flowNodeTargets>
+              <controlFlow Id="3f3fe768-170f-481d-a1dc-68583a534efa" isLeaf="false">
+                <opaqueActionMoniker Id="582cfd18-ab18-4648-9c59-234a58666155" LastKnownName="获取选定对象信息" />
+                <elementDefinition Id="45384ea4-3d94-4e09-8f67-110b6be322c2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="582cfd18-ab18-4648-9c59-234a58666155" name="获取选定对象信息" isLeaf="false">
+            <elementDefinition Id="a09e9998-1900-4591-8cfd-9d2f41a59093" />
+            <flowNodeTargets>
+              <controlFlow Id="13ce56bf-edd7-4197-a506-ab2cd932cdbf" isLeaf="false">
+                <opaqueActionMoniker Id="6e56767d-c07a-4a47-af22-7543aa2e2c45" LastKnownName="提取选定对象信息的内容" />
+                <elementDefinition Id="48a9677f-667d-41bc-a3ba-ace680d66852" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="6e56767d-c07a-4a47-af22-7543aa2e2c45" name="提取选定对象信息的内容" isLeaf="false">
+            <elementDefinition Id="dd05534c-6b2f-43a9-9966-95dd840a7e09" />
+            <flowNodeTargets>
+              <controlFlow Id="29bee8f8-429a-4c0c-af90-daca080aa547" isLeaf="false">
+                <opaqueActionMoniker Id="9d4e4974-19cf-4aad-9198-1f541fac9a55" LastKnownName="点击完成维修数据" />
+                <elementDefinition Id="46d05147-7d44-450f-8429-ca0a3c678608" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="dfebb586-c6be-4f96-a125-bd8830ea7cef" name="选择对“投诉信息的反馈”操作" isLeaf="false">
+            <elementDefinition Id="e2d43eba-7e4e-4cb5-801c-003914e33c66" />
+            <flowNodeTargets>
+              <controlFlow Id="00f1c0a7-8566-4695-bf08-4a787eab2e0c" isLeaf="false">
+                <opaqueActionMoniker Id="4c6c9e14-84f4-464e-b944-4349a0e4d4fa" LastKnownName="获取接收投诉信息的内容" />
+                <elementDefinition Id="08dcb9fa-cd1f-493d-97fd-c47b71e763a3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4c6c9e14-84f4-464e-b944-4349a0e4d4fa" name="获取接收投诉信息的内容" isLeaf="false">
+            <elementDefinition Id="ebb4ffd7-7eb2-4067-ba2b-9a690a7697d0" />
+            <flowNodeTargets>
+              <controlFlow Id="59779b27-6e78-439c-9541-66dbcd024604" isLeaf="false">
+                <opaqueActionMoniker Id="ae9a296c-9f86-4a73-8659-7c5503f76b05" LastKnownName="提取选定对象信息的内容" />
+                <elementDefinition Id="740c914c-fdf9-4441-9d09-ecb2285e57a3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ae9a296c-9f86-4a73-8659-7c5503f76b05" name="提取选定对象信息的内容" isLeaf="false">
+            <elementDefinition Id="a050937d-364f-43da-9144-ed19ff14f34e" />
+            <flowNodeTargets>
+              <controlFlow Id="fcaca974-9e51-40c1-af01-868a5f0470dc" isLeaf="false">
+                <joinNodeMoniker Id="89bbdb07-17ba-4989-9015-96cb5a3574c6" LastKnownName="Join1" />
+                <elementDefinition Id="4a102d70-e23c-42ad-8859-bea1bdc199f8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="9d4e4974-19cf-4aad-9198-1f541fac9a55" name="点击完成维修数据" isLeaf="false">
+            <elementDefinition Id="1b8055ef-0e7a-40f7-bc74-3f04e85f4204" />
+            <flowNodeTargets>
+              <controlFlow Id="29448236-e9ad-49e5-99da-eb29f1177a3f" isLeaf="false">
+                <opaqueActionMoniker Id="4d0c4b7d-38d3-4a34-8b15-1a17fb348c3e" LastKnownName="信息提示维修已完成" />
+                <elementDefinition Id="95f82673-3a74-4662-aa2a-0f88fbab3fc8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode Id="89bbdb07-17ba-4989-9015-96cb5a3574c6" name="Join1" isLeaf="false">
+            <elementDefinition Id="71d3a9d1-862b-45d2-924a-0282920ceb1a" />
+            <flowNodeTargets>
+              <controlFlow Id="e72e99c4-a1e4-4395-b415-6929a008713d" isLeaf="false">
+                <opaqueActionMoniker Id="879357ab-6692-447a-aaf7-411c0da0091e" LastKnownName="提取网上维修数据与信息反馈" />
+                <elementDefinition Id="b8308f63-b90d-4528-ace1-23eea2d03877" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction Id="4d0c4b7d-38d3-4a34-8b15-1a17fb348c3e" name="信息提示维修已完成" isLeaf="false">
+            <elementDefinition Id="b890281c-c877-46e2-9d77-fdab8d2d4b42" />
+            <flowNodeTargets>
+              <controlFlow Id="d1542bf9-0698-4fb7-b782-b62a600a3324" isLeaf="false">
+                <joinNodeMoniker Id="89bbdb07-17ba-4989-9015-96cb5a3574c6" LastKnownName="Join1" />
+                <elementDefinition Id="51234fc6-393e-4ef8-9d94-bda23fea4fff" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="7afe2eda-e2fc-41f3-8a20-6b95e4321036" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="23ea8266-dae3-4809-9bfc-a2c7476cf9b3" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="a89fd23c-d0cc-4abf-b3d3-617f4bcaaa73" name="ModelingProject">
+    <elementDefinition Id="96cb32e6-6290-4041-a200-5ec44e3bd4ca" />
+  </package>
+</activityRootModel>

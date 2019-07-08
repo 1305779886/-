@@ -1,0 +1,17 @@
+C:\2班\第3组\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\bin\Debug\ALEXFW.DataAccess.dll.config
+C:\2班\第3组\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\bin\Debug\ALEXFW.DataAccess.dll
+C:\2班\第3组\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\bin\Debug\ALEXFW.DataAccess.pdb
+C:\2班\第3组\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\bin\Debug\ALEXFW.Entity.dll
+C:\2班\第3组\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\bin\Debug\ALEXFW.Smart.dll
+C:\2班\第3组\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\bin\Debug\EntityFramework.dll
+C:\2班\第3组\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\2班\第3组\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\bin\Debug\ALEXFW.Entity.pdb
+C:\2班\第3组\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\bin\Debug\ALEXFW.Smart.pdb
+C:\2班\第3组\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\bin\Debug\ALEXFW.Smart.xml
+C:\2班\第3组\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\bin\Debug\EntityFramework.xml
+C:\2班\第3组\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\2班\第3组\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\obj\Debug\ALEXFW.DataAccess.csprojAssemblyReference.cache
+C:\2班\第3组\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\obj\Debug\ALEXFW.DataAccess.csproj.CoreCompileInputs.cache
+C:\2班\第3组\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\obj\Debug\ALEXFW.DataAccess.csproj.CopyComplete
+C:\2班\第3组\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\obj\Debug\ALEXFW.DataAccess.dll
+C:\2班\第3组\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\obj\Debug\ALEXFW.DataAccess.pdb

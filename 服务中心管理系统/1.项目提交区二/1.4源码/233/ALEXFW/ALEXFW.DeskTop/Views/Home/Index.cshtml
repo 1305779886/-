@@ -1,0 +1,48 @@
+﻿@model IEnumerable<ALEXFW.Entity.Demos.Lost>
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<p style="margin-bottom: 0px;font-size: 30px;color: #999;">服务中心电话：1612123</p>
+<p>失物招领视图：</p>
+<div class="container">
+    <div class="row">
+
+        @foreach (var item in Model)
+        {
+            <div class="card col-sm-4 col-xs-4 ">
+                <a href="" style="color: #000;text-decoration:none;">
+                    <div style="margin: 10px 0;">
+                        <div>
+                            @if (item.image == null)
+                            {
+                                <img style="height:220px" class="img-responsive img-rounded" src="~/WebUploadFile/Image/timg.jpg">
+
+                            }
+                            else
+                            {
+                                <img style="height:220px" class="img-responsive img-rounded" src="@item.image" />
+                            }
+                        </div>
+                        <h4>@item.ItemsName</h4>
+                        <p style="margin-bottom: 0px;font-size: 14px;color: #999;">说明：@item.Note</p>
+                        <p style="margin-bottom: 0px;font-size: 14px;color: #999;">地址：@item.Place</p>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(".card").hover(
+            function () {
+                $(this).css("background-color", "#eee");
+            },
+            function () {
+                $(this).css("background-color", "#fff");
+            }
+        );
+    });
+</script>

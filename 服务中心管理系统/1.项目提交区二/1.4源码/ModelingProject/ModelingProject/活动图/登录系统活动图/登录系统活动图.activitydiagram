@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="4f905e11-930f-43a1-b263-8ea3fe5e7001" name="登录系统活动图" linkedPackageId="1ab94b53-6316-4d85-b8a5-244d93b893e2" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="f8983257-1a0d-4df3-bbc1-17351a0dbfeb">
+      <elementDefinition Id="46507c90-f1f5-49ab-b2d9-7ecf637ce384" />
+      <body>管理员、队长、维修人员、在校学生打开网站首页</body>
+      <annotatedElements>
+        <initialNodeMoniker Id="897ab8ba-73e0-4d89-b781-972d51e23420" LastKnownName="Initial1" />
+      </annotatedElements>
+    </comment>
+    <comment Id="8cb2f8a8-036a-4350-b2d2-98baf43de65a">
+      <elementDefinition Id="e0375191-5d61-4780-9c42-a0d2f054fadc" />
+      <body>验证码不正确</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="60da1316-a947-4762-bb8b-c40976786a9a" LastKnownName="60S后重新发送手机验证码" />
+      </annotatedElements>
+    </comment>
+    <comment Id="069824a0-46ba-4636-99fa-a18197789817">
+      <elementDefinition Id="a1459522-c9e4-4954-92ce-fc3fe588e0a2" />
+      <body>管理员、队长、维修人员、在校学生进入后台页面</body>
+      <annotatedElements>
+        <activityFinalNodeMoniker Id="1a130d7e-015b-4630-925d-ce8286708d1c" LastKnownName="ActivityFinal1" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="c4017fc0-3484-4ec9-9bb2-4ec2ecb33042" name="登录系统活动图" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="c8170d0c-7323-4f4b-85a7-710a7f7dda65" />
+        <nodes>
+          <initialNode Id="897ab8ba-73e0-4d89-b781-972d51e23420" name="Initial1" isLeaf="false">
+            <elementDefinition Id="9bac1555-151d-42d3-af00-f8cff9a1adc8" />
+            <flowNodeTargets>
+              <controlFlow Id="ce9ef2a4-1d75-48e8-90b9-99eabd5c9cf0" isLeaf="false">
+                <opaqueActionMoniker Id="f5d285f9-24eb-479f-bca0-41135595f0f5" LastKnownName="访问登录界面" />
+                <elementDefinition Id="bcaebac8-36dd-4ffd-945b-f2996ec923e5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="f5d285f9-24eb-479f-bca0-41135595f0f5" name="访问登录界面" isLeaf="false">
+            <elementDefinition Id="3137556d-9c6c-4dac-befb-90043ac69cbb" />
+            <objectFlowTargets>
+              <objectFlow Id="e9293a54-fd80-4d12-8533-249175539136" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="4695054d-f55d-417a-bead-b01a405dfa78" LastKnownName="输入用户名、密码和手机验证" />
+                <elementDefinition Id="e2f6b998-8aba-44c1-82f4-a25d80b181a0" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <objectNode Id="4695054d-f55d-417a-bead-b01a405dfa78" name="输入用户名、密码和手机验证" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="0cb6c271-f1b2-4ad8-8721-e4a9b944777d" />
+            <objectFlowTargets>
+              <objectFlow Id="873c1897-2381-414b-8a50-5d8c6d04721f" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <decisionNodeMoniker Id="994bb629-422c-4544-aa36-53ac47088d21" LastKnownName="Decision1" />
+                <elementDefinition Id="865a0c14-352a-4989-bcf8-633a04ea1f6e" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="2cbb1674-1815-40a5-829a-fa5f34ea235b" name="2147483647" value="2147483647">
+                <elementDefinition Id="364ee9a6-5ed4-4080-b6f5-e31dc4b6fdb6" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="60da1316-a947-4762-bb8b-c40976786a9a" name="60S后重新发送手机验证码" isLeaf="false">
+            <elementDefinition Id="98823bf4-02d0-43ae-b159-d6d7b622a0eb" />
+            <objectFlowTargets>
+              <objectFlow Id="deb08b8b-a88b-4ca0-a07c-926393e8f559" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="4695054d-f55d-417a-bead-b01a405dfa78" LastKnownName="输入用户名、密码和手机验证" />
+                <elementDefinition Id="4a9d0d95-7492-46e3-bc3b-dc4f67c424ae" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="b1325cfc-92cc-40b2-8a03-b028990d25f8" name="系统提示登录成功" isLeaf="false">
+            <elementDefinition Id="84f11234-e31d-404e-8451-27ae31e9577b" />
+            <flowNodeTargets>
+              <controlFlow Id="ce924de2-2843-4cbd-bf93-8a3897299881" isLeaf="false">
+                <activityFinalNodeMoniker Id="1a130d7e-015b-4630-925d-ce8286708d1c" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="68ce4dc3-42ca-477d-91c9-e60dfd9a1805" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="73be24fa-a19b-4590-94c8-ff8ec6b72140" name="系统提示用户密码错误" isLeaf="false">
+            <elementDefinition Id="9e6ce029-505a-49f2-841c-64c488d1b693" />
+            <objectFlowTargets>
+              <objectFlow Id="58daacd4-4887-4a38-897c-f20a233d69e2" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="4695054d-f55d-417a-bead-b01a405dfa78" LastKnownName="输入用户名、密码和手机验证" />
+                <elementDefinition Id="afcdb4da-9f09-41ca-88bc-933c896d11ea" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <activityFinalNode Id="1a130d7e-015b-4630-925d-ce8286708d1c" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="37d2c6b8-d3de-4ff2-bcd5-5eab93cfa6e5" />
+          </activityFinalNode>
+          <decisionNode Id="994bb629-422c-4544-aa36-53ac47088d21" name="Decision1" isLeaf="false">
+            <elementDefinition Id="5fe6d7bd-a205-42c3-b125-942c7ccef135" />
+            <flowNodeTargets>
+              <controlFlow Id="9956b7db-4e6b-45cd-91ef-e06556e77281" isLeaf="false">
+                <opaqueActionMoniker Id="60da1316-a947-4762-bb8b-c40976786a9a" LastKnownName="60S后重新发送手机验证码" />
+                <elementDefinition Id="4bcb54f0-487b-4a00-a137-01d6f6e6c198" />
+              </controlFlow>
+              <controlFlow Id="24a13158-1a20-461d-a758-d653d2707753" isLeaf="false">
+                <opaqueActionMoniker Id="b1325cfc-92cc-40b2-8a03-b028990d25f8" LastKnownName="系统提示登录成功" />
+                <elementDefinition Id="b542d92a-2dca-4451-913b-50be16c60d54" />
+              </controlFlow>
+              <controlFlow Id="50dae962-906c-46fc-ac6f-6bf15dcbb2d4" isLeaf="false">
+                <opaqueActionMoniker Id="73be24fa-a19b-4590-94c8-ff8ec6b72140" LastKnownName="系统提示用户密码错误" />
+                <elementDefinition Id="23fd2521-ab8a-45b9-9d1d-2d53b60536e9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="1ab94b53-6316-4d85-b8a5-244d93b893e2" name="ModelingProject">
+    <elementDefinition Id="96cb32e6-6290-4041-a200-5ec44e3bd4ca" />
+    <profileInstances>
+      <packageHasProfileInstances Id="908d6ed3-4f77-4ed9-a768-1060161ff42c">
+        <profileInstance Id="fd0c3990-7d83-4dd4-acf6-58b943f07dbb" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4ff3cb6e-1a3c-4d73-8516-76288564fa67">
+        <profileInstance Id="7924a431-6564-427b-b6f4-fd85ea6d345a" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

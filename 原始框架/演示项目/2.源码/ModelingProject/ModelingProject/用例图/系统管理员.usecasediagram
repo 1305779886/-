@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="de2c8966-1100-4a8a-a55d-c293c72c72bf" name="系统管理员" linkedPackageId="c3197378-5bfb-4123-b93a-afa3cc84b8a5" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="af487412-2719-4393-bbb0-2c24fe2cdaee">
+      <elementDefinition Id="bee24f5d-37db-47fc-99d9-eff4c230366c" />
+      <body>管理员登录、登出
+具备密码基本加密功能，具备基本的爆破功能，具备基本的跨域伪造登录</body>
+    </comment>
+    <comment Id="92ec4521-540c-4d7c-928b-f41b54033e30">
+      <elementDefinition Id="192d6a0a-5412-4250-a4ce-d2c6f89f9fae" />
+      <body>店长关联店铺
+
+</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="dec3372b-17c5-4b97-aebb-8ac4394d9467" name="系统管理员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5f1d8d0c-e9f3-453c-81b1-e029769999c7" />
+        <targetEnds>
+          <association Id="7d405ec4-0e27-4284-a673-c8a2250a1a99" isDerived="false" sourceEndRoleName="系统管理员" targetEndRoleName="系统登录" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f681424e-051a-422f-9696-a9756d1bd9a0" LastKnownName="管理员用户认证" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b5946f1b-9c54-4211-8fbe-628fa797f1fa" name="系统管理员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b437f511-d946-475a-a06f-e5e63247815b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d4e27b21-93a5-4c68-b96a-9a0828541fd5" name="系统登录" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9a390080-11a5-490a-abcb-e68f98d39122" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="76e7adba-d7b0-4213-93f0-059b772b0b70" />
+          </association>
+          <association Id="664fe82e-b773-4706-8267-17fe4a31f611" isDerived="false" sourceEndRoleName="系统管理员" targetEndRoleName="店铺信息的管理与维护" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="48d7fab8-3e6c-4372-99ff-fe2c3e2bed98" LastKnownName="店铺信息的管理与维护" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2faccaa4-6494-4923-ad5e-6c0186d30fb0" name="系统管理员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0ef99cf3-daf5-41eb-b467-7daf5159f81d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a67ff603-6cab-427e-8038-8eef502aba9a" name="店铺信息的管理与维护" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1313a4e5-6507-4d53-9260-f51b436e85ab" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="79cd22b6-c3cd-4c27-b276-892f08bbee38" />
+          </association>
+          <association Id="7f772038-590c-4b98-bb36-38796efeea22" isDerived="false" sourceEndRoleName="系统管理员" targetEndRoleName="会员登录信息的管理与维护" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4f1aae72-a04c-4645-baaa-c75a277dd4ed" LastKnownName="会员等级信息的管理与维护" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3f51aca7-7e90-4c4b-9f78-cfd2881df059" name="系统管理员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4a7d47d3-7f89-4062-9365-26882f1fa4ad" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1765a76a-2804-40ce-bf33-9e03f5306a03" name="会员登录信息的管理与维护" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="84930d35-5c78-40cb-b287-0a1caa46ab77" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1d9f6574-be43-48b7-8118-b4175cf350bb" />
+          </association>
+          <association Id="67157aec-28e0-4390-89c1-7efffa00b073" isDerived="false" sourceEndRoleName="系统管理员" targetEndRoleName="店长用户的管理与维护" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4d4f8186-2733-4ed1-92ba-bf22ed256da8" LastKnownName="店长用户的管理与维护" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="773c56a4-8cd7-4472-abeb-131c11135b5c" name="系统管理员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="16104773-f0cf-468b-92f5-13d896f0040d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="339e570d-c70d-47d5-89f6-2d02edeb1daf" name="店长用户的管理与维护" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6a8d7367-7ff6-4483-aa3a-9764d8e60c38" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e2dceb4c-ec2d-408d-a702-2610c685994e" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f681424e-051a-422f-9696-a9756d1bd9a0" name="管理员用户认证" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5d4434a2-b65e-46ce-9ace-2dd23cc95cec" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="48d7fab8-3e6c-4372-99ff-fe2c3e2bed98" name="店铺信息的管理与维护" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5ac894b5-cee5-4741-a303-fc26e0c0022a" />
+        <extendedCases>
+          <extend Id="7e645573-ab37-41b0-ba9b-c2f85876ddb0">
+            <useCaseMoniker Id="97134182-0b11-4701-8e6d-0705f350d906" LastKnownName="Excel报表的导出" />
+            <elementDefinition Id="5b5838b4-b2ec-44a0-8b08-ea11016ebf01" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="97134182-0b11-4701-8e6d-0705f350d906" name="Excel报表的导出" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f92e3d5e-43cc-4f7b-9dc9-3c70c1383414" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4f1aae72-a04c-4645-baaa-c75a277dd4ed" name="会员等级信息的管理与维护" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c5011157-a2a3-4c14-9c25-0a1d8e7d40ef" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4d4f8186-2733-4ed1-92ba-bf22ed256da8" name="店长用户的管理与维护" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8134acdf-7df9-4084-87a5-15b686ec190a" />
+        <suppliersInternal>
+          <dependency Id="318d9a95-97d9-4beb-8ee8-1cbb4baaca6a">
+            <useCaseMoniker Id="48d7fab8-3e6c-4372-99ff-fe2c3e2bed98" LastKnownName="店铺信息的管理与维护" />
+            <elementDefinition Id="0a89d7c0-723a-4923-9698-731c45321a83" />
+          </dependency>
+        </suppliersInternal>
+        <extendedCases>
+          <extend Id="dbb368be-2cf5-41bf-b72d-16345ad4cb88">
+            <useCaseMoniker Id="97134182-0b11-4701-8e6d-0705f350d906" LastKnownName="Excel报表的导出" />
+            <elementDefinition Id="b909921e-8d87-46d1-84e5-75095239d6d7" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="c3197378-5bfb-4123-b93a-afa3cc84b8a5" name="ModelingProject">
+    <elementDefinition Id="0bb84ad1-6fac-4819-8f4c-08641bbd1a60" />
+    <profileInstances>
+      <packageHasProfileInstances Id="fb763340-d42c-40a3-85a6-9e1e5da7209e">
+        <profileInstance Id="e92fbaf7-7fb3-41de-8778-fe422aa86341" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="26121b24-b6d4-4165-87c7-08bd512ef7a0">
+        <profileInstance Id="7f3dd96a-7bb7-4a68-a705-9ccccf874d2a" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

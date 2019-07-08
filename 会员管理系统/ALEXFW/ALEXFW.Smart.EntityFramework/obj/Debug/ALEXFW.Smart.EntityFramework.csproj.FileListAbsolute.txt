@@ -1,0 +1,16 @@
+C:\2班\第3组\0.项目提交区\按用户角色跳转不同登录界面的框架\ALEXFW\ALEXFW.Smart.EntityFramework\bin\Debug\ALEXFW.Smart.EntityFramework.dll.config
+C:\2班\第3组\0.项目提交区\按用户角色跳转不同登录界面的框架\ALEXFW\ALEXFW.Smart.EntityFramework\bin\Debug\ALEXFW.Smart.EntityFramework.xml
+C:\2班\第3组\0.项目提交区\按用户角色跳转不同登录界面的框架\ALEXFW\ALEXFW.Smart.EntityFramework\bin\Debug\ALEXFW.Smart.EntityFramework.dll
+C:\2班\第3组\0.项目提交区\按用户角色跳转不同登录界面的框架\ALEXFW\ALEXFW.Smart.EntityFramework\bin\Debug\ALEXFW.Smart.EntityFramework.pdb
+C:\2班\第3组\0.项目提交区\按用户角色跳转不同登录界面的框架\ALEXFW\ALEXFW.Smart.EntityFramework\bin\Debug\ALEXFW.Smart.dll
+C:\2班\第3组\0.项目提交区\按用户角色跳转不同登录界面的框架\ALEXFW\ALEXFW.Smart.EntityFramework\bin\Debug\EntityFramework.dll
+C:\2班\第3组\0.项目提交区\按用户角色跳转不同登录界面的框架\ALEXFW\ALEXFW.Smart.EntityFramework\bin\Debug\EntityFramework.SqlServer.dll
+C:\2班\第3组\0.项目提交区\按用户角色跳转不同登录界面的框架\ALEXFW\ALEXFW.Smart.EntityFramework\bin\Debug\ALEXFW.Smart.pdb
+C:\2班\第3组\0.项目提交区\按用户角色跳转不同登录界面的框架\ALEXFW\ALEXFW.Smart.EntityFramework\bin\Debug\ALEXFW.Smart.xml
+C:\2班\第3组\0.项目提交区\按用户角色跳转不同登录界面的框架\ALEXFW\ALEXFW.Smart.EntityFramework\bin\Debug\EntityFramework.xml
+C:\2班\第3组\0.项目提交区\按用户角色跳转不同登录界面的框架\ALEXFW\ALEXFW.Smart.EntityFramework\bin\Debug\EntityFramework.SqlServer.xml
+C:\2班\第3组\0.项目提交区\按用户角色跳转不同登录界面的框架\ALEXFW\ALEXFW.Smart.EntityFramework\obj\Debug\ALEXFW.Smart.EntityFramework.csprojAssemblyReference.cache
+C:\2班\第3组\0.项目提交区\按用户角色跳转不同登录界面的框架\ALEXFW\ALEXFW.Smart.EntityFramework\obj\Debug\ALEXFW.Smart.EntityFramework.csproj.CoreCompileInputs.cache
+C:\2班\第3组\0.项目提交区\按用户角色跳转不同登录界面的框架\ALEXFW\ALEXFW.Smart.EntityFramework\obj\Debug\ALEXFW.Smart.EntityFramework.csproj.CopyComplete
+C:\2班\第3组\0.项目提交区\按用户角色跳转不同登录界面的框架\ALEXFW\ALEXFW.Smart.EntityFramework\obj\Debug\ALEXFW.Smart.EntityFramework.dll
+C:\2班\第3组\0.项目提交区\按用户角色跳转不同登录界面的框架\ALEXFW\ALEXFW.Smart.EntityFramework\obj\Debug\ALEXFW.Smart.EntityFramework.pdb

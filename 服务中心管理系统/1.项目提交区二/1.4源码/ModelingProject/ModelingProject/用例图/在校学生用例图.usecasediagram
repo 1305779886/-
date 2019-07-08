@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="60bc7e4e-115f-4033-a96b-2e8f31f81499" name="在校学生用例图" linkedPackageId="0cf822aa-a5b2-4e83-8087-955567cf8b44" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="46dfb583-41d7-402f-98f1-c69357b2a271" name="在校学生" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="69838d22-85fd-4eb9-b0c4-08c7d6ea859f" />
+        <targetEnds>
+          <association Id="363d5d26-dbef-4662-bbd0-1a72c9477387" isDerived="false" sourceEndRoleName="在校学生" targetEndRoleName="网上申报" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c41c1911-f7ef-49f3-8e9d-19975bf94a6d" LastKnownName="网上申报" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a9601129-0ca9-489f-a843-0455fe6f2ebf" name="在校学生" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8d105451-2673-4d3c-b96b-35fa78861d61" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fd11de2b-8a3a-4088-b2e4-242d3ce65a03" name="网上申报" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="042d7548-bdaf-47f4-8624-c29e8708c1c9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d5748bab-b108-4ebc-9021-01bf2d1ba3fd" />
+          </association>
+          <association Id="11a02e63-5b18-42f6-9bf0-0d7135f42400" isDerived="false" sourceEndRoleName="在校学生" targetEndRoleName="电话报修" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e50b3683-aa82-43c2-a2ec-b57a467fd633" LastKnownName="电话报修" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3138c661-7d60-406b-b2b8-db7674c6b11d" name="在校学生" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a907e702-f1ca-4fa0-97a9-a428eb0e2cce" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f25392cf-9160-41bf-b4cc-296aeed59d4a" name="电话报修" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9185d9c3-2446-4d55-93d8-30be366163fa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="98da2527-810b-4467-8589-a71f9d29227f" />
+          </association>
+          <association Id="b6f8b038-f786-4f7b-8d2f-eb3a9fcca0f3" isDerived="false" sourceEndRoleName="在校学生" targetEndRoleName="失物招领" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ea08733f-7fbb-4413-bd96-cfe56423d376" LastKnownName="失物招领" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f75b0060-4e91-449c-b1bb-800d5f6f130d" name="在校学生" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1b2c63ff-410c-470b-b91f-a587b4d39027" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6b86ea5e-1e9c-4147-b5b5-5b4290eac567" name="失物招领" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="57480383-badc-4207-aabb-ca87c3e8cbd9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="46f62216-97e0-4bff-8e3b-d86b322dbcc2" />
+          </association>
+          <association Id="ba91d9b2-31e6-4808-a765-ec8218f0fccf" isDerived="false" sourceEndRoleName="在校学生" targetEndRoleName="网上投诉" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="12ee770a-c474-4ba6-9c89-bc372dcda015" LastKnownName="网上投诉" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8fd7e4d0-f866-40e2-89f2-263e1f1ac252" name="在校学生" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6d4d8bf3-7e01-463a-99ca-93331ccc4ea4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b12620d5-ccd6-49b8-90f1-86c1d499be5f" name="网上投诉" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b64ce248-6e3d-48fa-a9f0-de266a9fc530" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4180c322-a81d-4112-8817-03fbc7c8d078" />
+          </association>
+          <association Id="5576a12b-df06-47f9-9194-b916c2660f57" isDerived="false" sourceEndRoleName="在校学生" targetEndRoleName="信息反馈" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="705bf172-e89e-4c0e-bbf9-8dc19b4cc377" LastKnownName="信息反馈" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4b159147-41ea-4b13-86fe-eea029b18bf4" name="在校学生" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c3718604-3e03-4d0a-b644-62d6d028905d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6ea61b7a-e340-46d9-89a6-fa96afa5e354" name="信息反馈" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9dd623b5-df77-40ce-bc32-6b8500000c41" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c1648dd7-004d-43e2-9f21-dab6532c7cbd" />
+          </association>
+          <association Id="5f0c9ba7-0d30-4fa5-8e6b-0f55c1e38cb7" isDerived="false" sourceEndRoleName="在校学生" targetEndRoleName="用户验证" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ec44db28-44cf-492a-90b8-2676aef2c8d2" LastKnownName="用户验证" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="75eb0da5-cc4a-4bd8-80de-a4740dc429fe" name="在校学生" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="15986fc3-0d08-42a0-b694-53e5df3aedc5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1a97a8e2-a3d2-480c-8678-07813571ef88" name="用户验证" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="48ae2438-26fd-4869-8d1f-468addeb751c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7d391f6f-352b-49f1-9092-d62a022fdee6" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c41c1911-f7ef-49f3-8e9d-19975bf94a6d" name="网上申报" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6e077031-8b38-41fe-8b81-02049cfa2c3d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e50b3683-aa82-43c2-a2ec-b57a467fd633" name="电话报修" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="259b8b07-b561-4aa7-93dd-ac111a428af4" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ea08733f-7fbb-4413-bd96-cfe56423d376" name="失物招领" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d5c2c924-ba07-43f7-acb5-295093efdcc7" />
+        <extendedCases>
+          <extend Id="851eb815-7d50-4d68-b497-bf6cbe5e1c93">
+            <useCaseMoniker Id="2b3acf1e-e943-461f-9a77-1a2f10b3ab5d" LastKnownName="浏览丢失物品信息" />
+            <elementDefinition Id="1cbeedb9-c420-4f75-8f66-af51bfeff38d" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="12ee770a-c474-4ba6-9c89-bc372dcda015" name="网上投诉" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b67bd044-d84d-4459-abfb-8bfb09976906" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="705bf172-e89e-4c0e-bbf9-8dc19b4cc377" name="信息反馈" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0feedb61-c633-49e1-953a-f83698c9e413" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2b3acf1e-e943-461f-9a77-1a2f10b3ab5d" name="浏览丢失物品信息" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ee4719d6-055b-44bf-bfbd-1034fe4dcde7" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ec44db28-44cf-492a-90b8-2676aef2c8d2" name="用户验证" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="40ab498c-a757-4bb4-8cda-5bbc0e6ebe36" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="0cf822aa-a5b2-4e83-8087-955567cf8b44" name="ModelingProject">
+    <elementDefinition Id="96cb32e6-6290-4041-a200-5ec44e3bd4ca" />
+    <profileInstances>
+      <packageHasProfileInstances Id="04985dd6-ce17-4edf-b7d1-5a1cbef03b14">
+        <profileInstance Id="6214de5f-4dc4-4769-85ef-2505b02c3cac" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="377af23e-a2ed-4270-82b8-5572445303e8">
+        <profileInstance Id="6f742948-23dc-410c-a3ca-be9aba6ae74c" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

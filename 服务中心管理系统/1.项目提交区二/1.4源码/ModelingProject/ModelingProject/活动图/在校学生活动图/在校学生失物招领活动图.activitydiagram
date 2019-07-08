@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="c4d3637c-5528-4d9f-b138-833d705e8f29" name="在校学生失物招领活动图" linkedPackageId="2abf7aad-5595-44a4-96b9-06f576b60f63" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="738ac85f-25ed-4e91-8f5a-f44d265fe7f6">
+      <elementDefinition Id="992eefc0-5075-4839-b3dc-4be13f872167" />
+      <body>学生进入网站首页</body>
+      <annotatedElements>
+        <initialNodeMoniker Id="c91d1b29-975f-4080-88d0-b13ce443efc1" LastKnownName="Initial1" />
+      </annotatedElements>
+    </comment>
+    <comment Id="d69cbaba-2c4f-4149-9301-638de7365402">
+      <elementDefinition Id="0f5809f9-791f-45d0-9f72-45c8876f4942" />
+      <body>继续其他操作
+</body>
+      <annotatedElements>
+        <activityFinalNodeMoniker Id="12ec413b-d75f-4b3d-b387-57da2ea48145" LastKnownName="ActivityFinal1" />
+      </annotatedElements>
+    </comment>
+    <comment Id="bf2cfaaf-787d-4376-886c-3133dbbde9e4">
+      <elementDefinition Id="93f836b1-1b22-40f7-aeae-f7b49e7746e2" />
+      <body>查看明细结束</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="eedc921d-a0d1-459e-9faf-94cf47919280" LastKnownName="提取对象的信息内容" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="27d8f28e-e3ff-4556-99f3-8774f7a26c96">
+      <profileInstance Id="90247cb3-cecd-4efa-beeb-2faa74bafc99" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a204c100-07b9-483c-99e1-dfd32035d9e6">
+      <profileInstance Id="4aa188ed-b566-4658-928d-34496b602b1c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="2d085d91-a5cd-4d6c-8089-543eaf3e8d2a" name="在校学生失物招领活动图" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="e2a79576-3b3c-468c-8dc4-a7ac24692401" />
+        <nodes>
+          <initialNode Id="c91d1b29-975f-4080-88d0-b13ce443efc1" name="Initial1" isLeaf="false">
+            <elementDefinition Id="b9f838bc-e988-4402-a4d5-a25b08d27f65" />
+            <flowNodeTargets>
+              <controlFlow Id="88f43c4b-5884-43ff-8e20-963798ef1157" isLeaf="false">
+                <opaqueActionMoniker Id="6459c86e-de8a-4bb2-b83f-2931ed7b9821" LastKnownName="失物招领" />
+                <elementDefinition Id="0a8f1d90-b8dc-418a-839d-a49f8a1fa71a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="6459c86e-de8a-4bb2-b83f-2931ed7b9821" name="失物招领" isLeaf="false">
+            <elementDefinition Id="428b463a-fce5-484a-8ec9-60a48370e4d7" />
+            <flowNodeTargets>
+              <controlFlow Id="d6d93941-b6c0-4302-bb58-b29ad0f081e3" isLeaf="false">
+                <activityFinalNodeMoniker Id="12ec413b-d75f-4b3d-b387-57da2ea48145" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="ca253490-510c-4cae-9df8-434556a77fd2" />
+              </controlFlow>
+              <controlFlow Id="b1729301-b4ae-42ca-b698-93a825b5f4a6" isLeaf="false">
+                <opaqueActionMoniker Id="96e40f5d-6207-4c02-8d42-23377c34c6bd" LastKnownName="浏览物品信息" />
+                <elementDefinition Id="947832e0-bf30-47f7-ba67-943b90b40065" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="12ec413b-d75f-4b3d-b387-57da2ea48145" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="04d5e35e-cb8e-4977-b06f-726025ab6d22" />
+          </activityFinalNode>
+          <opaqueAction Id="8ba91ecf-ca0a-442f-951e-c31bb859ba88" name="获取接收选定的对象" isLeaf="false">
+            <elementDefinition Id="91fe56b7-8d1c-43b5-a80c-1963b275f1d2" />
+            <flowNodeTargets>
+              <controlFlow Id="b443e59d-f7c3-4ec2-a0d9-07444fc46714" isLeaf="false">
+                <opaqueActionMoniker Id="eedc921d-a0d1-459e-9faf-94cf47919280" LastKnownName="提取对象的信息内容" />
+                <elementDefinition Id="1070f859-b83b-4426-9884-67f4b41cc56a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="eedc921d-a0d1-459e-9faf-94cf47919280" name="提取对象的信息内容" isLeaf="false">
+            <elementDefinition Id="360d896d-cdfd-4065-b69a-54cfb224c7ba" />
+            <flowNodeTargets>
+              <controlFlow Id="87c31abe-cc33-4d2f-ba8c-68e86c86d3f0" isLeaf="false">
+                <opaqueActionMoniker Id="6459c86e-de8a-4bb2-b83f-2931ed7b9821" LastKnownName="失物招领" />
+                <elementDefinition Id="db59f9c6-c6b4-4031-810c-1293c17ae299" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="96e40f5d-6207-4c02-8d42-23377c34c6bd" name="浏览物品信息" isLeaf="false">
+            <elementDefinition Id="778e9612-c1ed-43fa-b8b5-96c7f8e904ee" />
+            <flowNodeTargets>
+              <controlFlow Id="3ee41dc9-57df-48ce-814d-b058d148003e" isLeaf="false">
+                <opaqueActionMoniker Id="8ba91ecf-ca0a-442f-951e-c31bb859ba88" LastKnownName="获取接收选定的对象" />
+                <elementDefinition Id="c39052bc-a792-411a-8142-f4e5b8748876" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="2abf7aad-5595-44a4-96b9-06f576b60f63" name="ModelingProject">
+    <elementDefinition Id="96cb32e6-6290-4041-a200-5ec44e3bd4ca" />
+  </package>
+</activityRootModel>

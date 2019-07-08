@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="店铺管理员">
+  <useCaseModelRootMoniker Id="639d0e68-64b8-45e9-8191-f96865ecf719" />
+  <nestedChildShapes>
+    <actorShape Id="41e75258-79e0-41f0-9d09-2346c0a78947" absoluteBounds="1.5, 2.625, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="43813c23-b433-43e7-a245-aa0937cbfc76" LastKnownName="店长" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="1322a21b-24e7-4452-b1d6-abe6707576da" absoluteBounds="3.75, 0.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="7853701b-5b3b-4552-a38b-97d6c320534e" LastKnownName="用户认证" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2 : 2.6875); (3.97264990188739 : 1.20801257358446)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="557a3024-49f0-401c-8abd-310bfc898019" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="41e75258-79e0-41f0-9d09-2346c0a78947" />
+        <useCaseShapeMoniker Id="1322a21b-24e7-4452-b1d6-abe6707576da" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="5f5a871b-e33e-44da-9adb-d9f5586b6ea7" absoluteBounds="4.25, 1.5, 1.5, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="69aef4ed-3fcb-4333-9110-47d79e581cb2" LastKnownName="店铺业务员用户管理与维护" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2 : 2.79326923076923); (4.40994638143594 : 2.00540214453056)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="7ddab05d-e5cb-4973-89e3-64f54b90160f" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="41e75258-79e0-41f0-9d09-2346c0a78947" />
+        <useCaseShapeMoniker Id="5f5a871b-e33e-44da-9adb-d9f5586b6ea7" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="73f04872-10f9-4bd3-b109-fa82df35b782" absoluteBounds="4.5, 2.5, 1.5, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="fc1d85fb-eaff-4441-9dee-4241d37a3a22" LastKnownName="本店铺的会员的管理与维护" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2 : 2.87053571428571); (4.50068782813674 : 2.82588057449756)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="18cded58-92c5-426d-94f0-c4e21771ef8f" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="41e75258-79e0-41f0-9d09-2346c0a78947" />
+        <useCaseShapeMoniker Id="73f04872-10f9-4bd3-b109-fa82df35b782" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="81a65d28-62db-4966-aaf9-29929b715713" absoluteBounds="7.25, 1.75, 1.5, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="12d577ff-8cdb-4bee-b38c-a7b59625f845" LastKnownName="会员卡号开卡、换卡和挂失" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(5.87752613767065 : 2.641356507908); (7.37247386232935 : 2.233643492092)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«扩展»">
+      <extendMoniker Id="6c88b1e3-5f36-4667-9fa5-5921eafdcd0e" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="73f04872-10f9-4bd3-b109-fa82df35b782" />
+        <useCaseShapeMoniker Id="81a65d28-62db-4966-aaf9-29929b715713" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="50593eb4-fbe0-4173-83fb-c3992a1ab3cd" absoluteBounds="4.5, 3.375, 1.25, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="b2962a88-1722-43b5-8d35-dd53f72ce1be" LastKnownName="会员的积分转账" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2 : 2.93055555555556); (4.57865170242404 : 3.50358926720534)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="ed27f353-34a8-4554-9879-f38cf8ff997e" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="41e75258-79e0-41f0-9d09-2346c0a78947" />
+        <useCaseShapeMoniker Id="50593eb4-fbe0-4173-83fb-c3992a1ab3cd" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="288ca097-f3f2-4511-9959-ee8dfe65cd70" absoluteBounds="7.5, 4, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="6a27ccac-06a0-45c5-a96f-89b33ef0e097" LastKnownName="积分报表明细" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(5.67414031848284 : 3.74437833010497); (7.54146497187338 : 4.15031847214639)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«扩展»">
+      <extendMoniker Id="bfd79239-4730-4e4e-9bd7-54c7f51830a1" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="50593eb4-fbe0-4173-83fb-c3992a1ab3cd" />
+        <useCaseShapeMoniker Id="288ca097-f3f2-4511-9959-ee8dfe65cd70" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="7a543134-250e-47e4-889f-751f5f4b0b2d" absoluteBounds="4.5, 4.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="ec206d7c-a37f-4cfd-8f58-c04f31df39ce" LastKnownName="积分的消费" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2 : 3); (4.64644660940673 : 4.32322330470336)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="e88ef941-2730-4131-ace4-e3cb845e5095" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="41e75258-79e0-41f0-9d09-2346c0a78947" />
+        <useCaseShapeMoniker Id="7a543134-250e-47e4-889f-751f5f4b0b2d" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <extendConnector edgePoints="[(5.49319696191607 : 4.45890025317366); (7.50680303808393 : 4.29109974682634)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«扩展»">
+      <extendMoniker Id="d8dc2f86-17e2-4313-9a20-59bd602c9a95" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="7a543134-250e-47e4-889f-751f5f4b0b2d" />
+        <useCaseShapeMoniker Id="288ca097-f3f2-4511-9959-ee8dfe65cd70" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="15865ea4-401a-4733-b840-7da779bf9ea2" absoluteBounds="4.125, 5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="b81b5983-cf92-42e7-9c6d-181f8e8c066d" LastKnownName="积分的兑换" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2 : 3.08152173913043); (4.36609866029711 : 5.03612498024544)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="f85bc009-1088-46b9-9aa5-36abd7f69a83" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="41e75258-79e0-41f0-9d09-2346c0a78947" />
+        <useCaseShapeMoniker Id="15865ea4-401a-4733-b840-7da779bf9ea2" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <extendConnector edgePoints="[(5.05514576681709 : 5.12254940242457); (7.56985423318291 : 4.37745059757543)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«扩展»">
+      <extendMoniker Id="ab29b33a-5f80-4beb-8599-ce1d081233a8" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="15865ea4-401a-4733-b840-7da779bf9ea2" />
+        <useCaseShapeMoniker Id="288ca097-f3f2-4511-9959-ee8dfe65cd70" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="dd603e1b-198e-4807-a5b4-f93646426bf6" absoluteBounds="2.375, 5.375, 1.5, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="555d7b68-9ac4-4b6b-bc07-cff736df4226" LastKnownName="查询和统计用户积分情况" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.87222222222222 : 3.125); (2.97529663839183 : 5.38128857852874)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="fdbacd68-6ab3-49b4-a060-bb4d0defd7dc" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="41e75258-79e0-41f0-9d09-2346c0a78947" />
+        <useCaseShapeMoniker Id="dd603e1b-198e-4807-a5b4-f93646426bf6" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

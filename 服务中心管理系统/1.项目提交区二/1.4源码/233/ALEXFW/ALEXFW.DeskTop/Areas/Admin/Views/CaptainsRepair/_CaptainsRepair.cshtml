@@ -1,0 +1,72 @@
+﻿@using ALEXFW.Entity.Demos;
+@{
+    var captainsRepair = (CaptainsRepair)Session["captainsRepair"];
+}
+
+<ol class="breadcrumb">
+    <li>
+        <a href="@Html.Raw(Url.Action("Index", "captainsRepair"))">维修列表</a>
+    </li>
+    @*<li class="active">会员卡列表</li>*@
+</ol>
+
+<div class="panel-body">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+
+                <!-- Default panel contents -->
+                <div class="panel-heading">
+                    &nbsp;
+                    <a href="@Html.Raw(Url.Action("Create"))" class="btn btn-default pull-right" style="margin-top: -7px;">添加维修信息</a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <td title="会员卡号">维修单号</td>
+                <td title="是否激活">是否完成</td>
+                <td title="操作">操作</td>
+            </tr>
+        </thead>
+
+        @{
+            if (captainsRepair. == null)
+            {
+
+            }
+            else
+            {
+                <tbody>
+                    @foreach (var item in captainsRepair.)
+                    {
+                        <tr>
+                            <td>@item.CaptainID</td>
+
+                            <td>@item.IsActivate</td>
+
+                            <td class="text-center" style="width: 64px;">
+                                <div class="btn-group btn-group-xs">
+                                    <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li>
+                                            <a class="btn" href="@Html.Raw(Url.Action("NotActivated", new {id = item.Index}))"><i class="glyphicon glyphicon-edit"></i>完成</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            }
+        }
+
+    </table>
+
+</div>

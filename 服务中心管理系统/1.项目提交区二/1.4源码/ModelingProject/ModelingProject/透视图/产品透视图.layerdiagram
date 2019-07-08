@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="0108ae30-9944-480c-a622-545424a1c032" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="2888bcbd-88ce-4add-b4cb-daa6588aa9c9" name="门户网站">
+      <childLayers>
+        <layer Id="fa134e73-6012-4cfa-b993-7e5821437f31" name="入门导航" />
+        <layer Id="ad4178c0-6516-49c2-87b1-5b709cd13c13" name="管理工作信息" />
+        <layer Id="5fe808c3-1d56-4525-800b-eb8ede4f5197" name="个人管理信息" />
+        <layer Id="ad6b613e-a1f9-4269-b870-013186da4d0a" name="业务管理信息" />
+        <layer Id="8bb7393c-af88-44fd-9208-70b73dd449f3" name="前台管理">
+          <childLayers>
+            <layer Id="e0369c8f-0560-4e4c-85a5-4869b973cb04" name="网上申报" />
+            <layer Id="c0d29269-90e7-43a5-8b48-f847d78d703b" name="电话报修" />
+            <layer Id="a7e861ac-f191-4598-9b0d-bd21f1d5b4e3" name="失物招领" />
+            <layer Id="74758bb7-1891-4946-a95a-e7f9f6ea06dc" name="网上投诉" />
+            <layer Id="3cdee724-476e-436d-97bf-ea4d3bef090e" name="信息反馈" />
+          </childLayers>
+        </layer>
+        <layer Id="7535f681-d72a-4d08-9e9b-dc417217db2d" name="后台管理">
+          <childLayers>
+            <layer Id="f57950e2-cebe-41e4-b22c-e48d4c602f42" name="管理员对队长信息维护" />
+            <layer Id="3b07afb5-1d89-4d68-920a-4fff89e83475" name="队长对维修人员信息维护" />
+            <layer Id="61a9190e-f11b-4d13-af81-bdd841ca2a58" name="学生管理员接收投诉信息并对下属人员处理" />
+            <layer Id="b9671dd7-ded1-4533-a985-d4eb9b011ce9" name="维修人员进行维修并向队长提交完成" />
+          </childLayers>
+        </layer>
+      </childLayers>
+    </layer>
+  </layers>
+</layerModel>

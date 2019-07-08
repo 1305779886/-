@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ba0983ca-a36f-4a5b-a5a7-2440be996579}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>ModelingProject</Name>
+    <RootNamespace>ModelingProject</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="用例图\业务员.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="用例图\业务员.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>用例图\业务员.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="用例图\店长.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="用例图\店长.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>用例图\店长.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="用例图\系统管理员.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="用例图\系统管理员.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>用例图\系统管理员.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="管理员活动图\管理员认证.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="管理员活动图\管理员认证.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>管理员活动图\管理员认证.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="类图\会员积分系统类图.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="类图\会员积分系统类图.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>类图\会员积分系统类图.classdiagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\ModelingProject.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="类图" />
+    <Folder Include="用例图" />
+    <Folder Include="业务员的活动图" />
+    <Folder Include="店长的活动图" />
+    <Folder Include="管理员活动图" />
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="系统结构图.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="系统结构图.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>系统结构图.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="系统结构图.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>系统结构图.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+</Project>

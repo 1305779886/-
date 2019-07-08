@@ -1,0 +1,81 @@
+﻿@model ALEXFW.DeskTop.ViewModels.MemberViewModel
+@{
+    int count = 0;
+}
+
+<ol class="breadcrumb">
+    <li>
+        <a href="@Html.Raw(Url.Action("Index", "member"))">会员列表</a>
+    </li>
+    <li class="active">搜索会员结果<>
+</ol>
+
+
+<div class="panel-body">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <td title="用户名">用户名</td>
+                <td title="姓名">姓名</td>
+                <td title="店铺">店铺</td>
+                <td title="店铺">会员卡</td>
+                <td title="操作">操作</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Members)
+            {
+                <tr>
+                    <td>@item.Username</td>
+                    <td>@item.PersonName</td>
+                    <td>@item.Department</td>
+                    @if (@item.MemberCards.Count == 0)
+                    {
+                        <td>该会员无会员卡。</td>
+                    }
+                    else
+                    {
+                        foreach (var i in @item.MemberCards)
+                        {
+                            count++;
+                            if (i.IsActivate == true)
+                            {
+                                <td>@i.CardNumber</td>
+                                break;
+                            }
+                            else if (count == @item.MemberCards.Count)
+                            {
+                                <td>无会员卡处于激活状态。</td>
+                            }
+                            else
+                            {
+                                continue;
+                            }
+                        }
+                        count = 0;
+                    }
+
+
+                    <td class="text-center" style="width: 64px;">
+                        <div class="btn-group btn-group-xs">
+                            <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li>
+                                    <a class="btn" href="@Html.Raw(Url.Action("Detail", new {id = item.Index}))"><i class="glyphicon glyphicon-list-alt"></i>明细</a>
+                                </li>
+                                <li>
+                                    <a class="btn" href="@Html.Raw(Url.Action("Index","memberCard", new {id = item.Index}))"><i class="glyphicon glyphicon-list-alt"></i>会员卡</a>
+                                </li>
+                                <li>
+                                    <a class="btn" href="@Html.Raw(Url.Action("Edit", new {id = item.Index}))"><i class="glyphicon glyphicon-edit"></i>编辑</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

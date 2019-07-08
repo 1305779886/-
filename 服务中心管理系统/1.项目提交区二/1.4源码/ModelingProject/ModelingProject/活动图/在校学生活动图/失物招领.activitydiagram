@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="0b46ba12-cde8-450b-ae2d-699543ba0dbb" name="失物招领" linkedPackageId="91fdf14d-5ae6-462d-a9a0-165e3b1ee85a" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="0f942ddc-a97f-4080-b172-e627e57cf7cb">
+      <elementDefinition Id="c3d52ac0-c9f8-47ef-acb4-d8930458e499" />
+      <body>学生进入后台页面</body>
+      <annotatedElements>
+        <initialNodeMoniker Id="a7b49d7d-b16b-4352-97d5-cd6294d2b26b" LastKnownName="Initial1" />
+      </annotatedElements>
+    </comment>
+    <comment Id="d018ee3d-9b2f-49ed-82a5-1948ce99f534">
+      <elementDefinition Id="fa9f21cc-acf0-4c67-b8c2-7d239b5d2743" />
+      <body>继续其他操作</body>
+      <annotatedElements>
+        <activityFinalNodeMoniker Id="9acaaeef-1f8b-4b69-8db9-52f46f8bec97" LastKnownName="ActivityFinal1" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="1821cf39-da99-4bf7-876c-9861f890e224" name="失物招领" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="62bb80a0-8999-4e2e-a0eb-53ae1003be5c" />
+        <nodes>
+          <opaqueAction Id="2c56e9f3-963f-4b92-b964-a2ba9c67a195" name="选择查看“明细”操作" isLeaf="false">
+            <elementDefinition Id="2c81e651-b75a-4ed7-8193-1a704639634d" />
+            <flowNodeTargets>
+              <controlFlow Id="9c71351c-3f03-4832-bc07-a512dd9a680f" isLeaf="false">
+                <opaqueActionMoniker Id="fcc0732a-b7ea-4693-a7b0-7ee2f8c06725" LastKnownName="获取选定对象信息" />
+                <elementDefinition Id="26b1f832-2bda-4a89-a148-3b66723e7301" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="fcc0732a-b7ea-4693-a7b0-7ee2f8c06725" name="获取选定对象信息" isLeaf="false">
+            <elementDefinition Id="b4469bcd-1fea-4ff4-8765-d61b725abdb4" />
+            <flowNodeTargets>
+              <controlFlow Id="ed14755a-3eae-4886-8949-1954ca1bbd74" isLeaf="false">
+                <opaqueActionMoniker Id="468fb8e1-e8f0-482c-a371-bbaf68cd5ce3" LastKnownName="提取维修信息内容" />
+                <elementDefinition Id="9601b2cb-11bb-4759-a3fc-c28b6eeb2dd7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="468fb8e1-e8f0-482c-a371-bbaf68cd5ce3" name="提取维修信息内容" isLeaf="false">
+            <elementDefinition Id="f1386b4a-4b94-4c75-ab73-430392b97c0c" />
+            <flowNodeTargets>
+              <controlFlow Id="0f0fde8c-2a1b-46de-912e-ca798eb66cd5" isLeaf="false">
+                <activityFinalNodeMoniker Id="9acaaeef-1f8b-4b69-8db9-52f46f8bec97" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="4c84ada2-998e-490c-ae04-3e6aafe73cd3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="29643aa7-fa94-4bac-b0f2-a6ee4617e4bc" name="失物招领" isLeaf="false">
+            <elementDefinition Id="42675e02-c7fa-470e-9298-9ca66c229eb4" />
+            <flowNodeTargets>
+              <controlFlow Id="18447959-3dd3-4220-b41e-baa12745000e" isLeaf="false">
+                <opaqueActionMoniker Id="2c56e9f3-963f-4b92-b964-a2ba9c67a195" LastKnownName="选择查看“明细”操作" />
+                <elementDefinition Id="c8fe3bff-54b8-4bda-a971-e3692d9133ef" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <initialNode Id="a7b49d7d-b16b-4352-97d5-cd6294d2b26b" name="Initial1" isLeaf="false">
+            <elementDefinition Id="f398791e-66f8-45b5-8a98-9fbb56dd630b" />
+            <flowNodeTargets>
+              <controlFlow Id="1b849bec-aee0-4c58-8fee-fd216d3147ad" isLeaf="false">
+                <opaqueActionMoniker Id="29643aa7-fa94-4bac-b0f2-a6ee4617e4bc" LastKnownName="失物招领" />
+                <elementDefinition Id="aee7c1c9-927d-47df-abaf-2adee49417f8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode Id="9acaaeef-1f8b-4b69-8db9-52f46f8bec97" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="09dd4ab3-f9d1-4661-a122-6c8f47760b6b" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="91fdf14d-5ae6-462d-a9a0-165e3b1ee85a" name="ModelingProject">
+    <elementDefinition Id="96cb32e6-6290-4041-a200-5ec44e3bd4ca" />
+    <profileInstances>
+      <packageHasProfileInstances Id="01529b98-364b-4e2d-b23a-186f79e98860">
+        <profileInstance Id="5157de84-b8d5-42ca-b342-ca2fc8e92212" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="e185e9db-0e20-4763-b953-5ddc1709958d">
+        <profileInstance Id="0d9fcd67-4a06-4a57-b38c-6d1ad57dc816" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

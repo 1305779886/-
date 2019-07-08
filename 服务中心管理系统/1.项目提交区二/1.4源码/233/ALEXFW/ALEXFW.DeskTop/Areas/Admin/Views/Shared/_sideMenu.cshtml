@@ -1,0 +1,190 @@
+﻿@using ALEXFW.Entity.UserAndRole
+@{
+    var loginAdmin = Session["LoginAdmin"] as Admin;
+}
+@if (loginAdmin.Group == AdminGroup.服务中心维修人员)
+{
+    <br />
+    <div class="panel-group admin-sideMenu" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-v">
+            <div class="panel-heading" role="tab" id="headingUser">
+                <h4 class="panel-title" style="color:#333">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseUser" aria-expanded="true" aria-controls="collapseUser">
+                        <i class="glyphicon glyphicon-user"></i>  服务中心维修人员
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseUser" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingUser">
+                <div class="panel-body">
+                    @*<a href="@Url.Action("Index", "Students")" title="" target="layout">学生信息管理 </a>*@
+                    <a href="@Url.Action("Index", "MDepartment")" title="" target="layout">维修服务 </a>
+                    <a href="@Url.Action("Index", "Information")" title="" target="layout">信息反馈</a>
+                    <a href="@Url.Action("Index", "Complaint")" title="" target="layout">投诉信息</a>
+                    @*<a href="@Url.Action("Index", "Serviceman")" title="" target="layout">维修人员信息</a>*@
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else if (loginAdmin.Group == (AdminGroup.服务中心维修人员 | AdminGroup.学生服务中心队长))
+{
+    <br />
+    <div class="panel-group admin-sideMenu" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-v">
+            <div class="panel-heading" role="tab" id="headingUser">
+                <h4 class="panel-title" style="color:#333">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseUser" aria-expanded="true" aria-controls="collapseUser">
+                        <i class="glyphicon glyphicon-user"></i>  学生服务中心队长
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseUser" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingUser">
+                <div class="panel-body">
+                  @*  <a href="@Url.Action("Index", "Students")" title="" target="layout">学生信息管理 </a>*@
+                    <a href="@Url.Action("Index", "CaptainsRepair")" title="" target="layout">维修服务 </a>
+                    @*<a href="@Url.Action("Index", "StudentRepair")" title="" target="layout">网上报修</a>*@
+                    <a href="@Url.Action("Index", "MAdmin")" title="" target="layout">维修人员信息</a>
+                    <a href="@Url.Action("Index", "Information")" title="" target="layout">学生信息反馈 </a>
+                    <a href="@Url.Action("Index", "Complaint")" title="" target="layout">学生投诉信息</a>
+                    <a href="@Url.Action("Index", "Lost")" title="" target="layout">失物招领</a>
+                    <a href="@Url.Action("Index", "Owner")" title="" target="layout">失主信息登记</a>
+                    @*<a href="@Url.Action("Index", "Dorm")" title="" target="layout">宿舍分组 </a>*@
+                    @*<a href="@Url.Action("Index", "Serviceman")" title="" target="layout">维修人员信息</a>*@
+
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else if (loginAdmin.Group == (AdminGroup.学生服务中心管理员 | AdminGroup.学生服务中心队长 | AdminGroup.服务中心维修人员))
+{
+    <br />
+    <div class="panel-group admin-sideMenu" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-v">
+            <div class="panel-heading" role="tab" id="headingUser">
+                <h4 class="panel-title" style="color:#333">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseUser" aria-expanded="true" aria-controls="collapseUser">
+                        <i class="glyphicon glyphicon-user"></i>  学生服务中心管理员
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseUser" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingUser">
+                <div class="panel-body">
+                    @*<a href="@Url.Action("Index", "Students")" title="" target="layout">学生信息管理 </a>*@
+                    <a href="@Url.Action("Index", "CaptainsRepair")" title="" target="layout">维修服务 </a>
+                    <a href="@Url.Action("Index", "Dorm")" title="" target="layout">宿舍分组 </a>
+                    <a href="@Url.Action("Index", "GroupTeam")" title="" target="layout">维修人员队伍分组 </a>
+                    @*<a href="@Url.Action("Index", "MAdmin")" title="" target="layout">维修人员信息</a>*@
+
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-v">
+            <div class="panel-heading" role="tab" id="headingUser">
+                <h4 class="panel-title" style="color:#333">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseUserGroup" aria-expanded="true" aria-controls="collapseUserGroup">
+                        <i class="glyphicon glyphicon-folder-open"></i>  服务中心人员管理
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseUserGroup" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingUser">
+                <div class="panel-body">
+                    <a href="@Url.Action("Index", "Admin")" title="" target="layout">服务中心人员管理</a>
+                    <a href="@Url.Action("Search", "Admin")" title="" target="layout">服务中心人员搜索</a>
+                    <a href="@Url.Action("Create", "Admin")" title="" target="layout">服务中心人员创建</a>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else if (loginAdmin.Group == AdminGroup.在校学生)
+{
+    <br />
+    <div class="panel-group admin-sideMenu" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-v">
+            <div class="panel-heading" role="tab" id="headingUser">
+                <h4 class="panel-title" style="color:#333">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseUser" aria-expanded="true" aria-controls="collapseUser">
+                        <i class="glyphicon glyphicon-user"></i>在校学生
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseUser" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingUser">
+                <div class="panel-body">
+                    <a href="@Url.Action("Index", "StudentRepair")" title="" target="layout">网上报修</a>
+                    <a href="@Url.Action("Index", "Lost")" title="" target="layout">失物招领</a>
+                    <a href="@Url.Action("Index", "Information")" title="" target="layout">信息反馈</a>
+                    <a href="@Url.Action("Index", "Complaint")" title="" target="layout">投诉信息</a>
+                </div>
+            </div>
+        </div>
+</div>
+}
+
+
+
+
+        @*<div class="panel panel-v">
+                <div class="panel-heading" role="tab" id="headingUser">
+                    <h4 class="panel-title" style="color:#333">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseQrCode" aria-expanded="true" aria-controls="collapseQrCode">
+                            <i class="glyphicon glyphicon-qrcode"></i>  二维码管理
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseQrCode" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingUser">
+                    <div class="panel-body" style="color:#333">
+                        <a href="@Url.Action("Index","QrCode")" title="" target="layout">二维码管理</a>
+                        <a href="@Url.Action("Search", "QrCode")" title="" target="layout">二维码搜索</a>
+                        <a href="@Url.Action("Create", "QrCode")" title="" target="layout">二维码创建</a>
+                    </div>
+                </div>
+            </div>*@
+        @*<div class="panel panel-v">
+                <div class="panel-heading" role="tab" id="headingRecharge">
+                    <h4 class="panel-title" style="color:#333">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseRecharge" aria-expanded="false" aria-controls="collapseRecharge">
+                            <i class="glyphicon glyphicon-yen"></i>  充值管理
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseRecharge" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingRecharge">
+                    <div class="panel-body">
+                        <a href="@Url.Action("Index", "Payment")" title="" target="layout">充值记录</a>
+                    </div>
+                </div>
+            </div>*@
+        @*<div class="panel panel-v">
+                <div class="panel-heading" role="tab" id="headingAdmin">
+                    <h4 class="panel-title" style="color:#333">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseAdmin" aria-expanded="false" aria-controls="collapseAdmin">
+                            <i class="glyphicon glyphicon-lock"></i>   管理员管理
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseAdmin" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingAdmin">
+                    <div class="panel-body" style="color:#333">
+                        <a href="@Url.Action("Index","Admin")" title="" target="layout">管理员管理</a>
+                        <a href="@Url.Action("Search", "Admin")" title="" target="layout">管理员搜索</a>
+                        <a href="@Url.Action("Create", "Admin")" title="" target="layout">管理员创建</a>
+                    </div>
+                </div>
+            </div>*@
+
+        @*<div class="panel panel-v">
+                <div class="panel-heading" role="tab" id="headingAdmin">
+                    <h4 class="panel-title" style="color:#333">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSystem" aria-expanded="false" aria-controls="collapseSystem">
+                            <i class="glyphicon glyphicon-cog"></i>   系统设置
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseSystem" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingAdmin">
+                    <div class="panel-body">
+                        <a href="@Url.Action("Index","WechatMenu")" title="" target="layout">微信自定义菜单</a>
+                        <a href="@Url.Action("Create", "WechatMenu")" title="" target="layout">自定义菜单创建</a>
+                        <a href="@Url.Action("Index", "WechatTextMsg")" target="layout">自动回复文本消息</a>
+                        <a href="@Url.Action("Create", "WechatTextMsg")" target="layout">文本消息创建</a>
+                    </div>
+                </div>
+            </div>*@

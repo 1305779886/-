@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="639d0e68-64b8-45e9-8191-f96865ecf719" name="业务员" linkedPackageId="5bf20150-66e4-4993-9005-f1aeb823878e" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="43813c23-b433-43e7-a245-aa0937cbfc76" name="业务员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="53dbb104-6c7d-4363-87e0-201790eeb6cf" />
+        <targetEnds>
+          <association Id="557a3024-49f0-401c-8abd-310bfc898019" isDerived="false" sourceEndRoleName="店铺管理员" targetEndRoleName="系统登录" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7853701b-5b3b-4552-a38b-97d6c320534e" LastKnownName="用户认证" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3b45e623-1d9c-4c37-8601-99b89c3d3b47" name="店铺管理员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="69645220-49ea-478c-96c1-32fcecd8e5eb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d0954ac8-a9f3-4c8a-b831-053d83ab5512" name="系统登录" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="50172da1-b1be-41f4-9a1a-48fd3e51ca44" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cf6b0c6f-8b5f-4105-b67f-456d090e3d1c" />
+          </association>
+          <association Id="18cded58-92c5-426d-94f0-c4e21771ef8f" isDerived="false" sourceEndRoleName="店长" targetEndRoleName="本店铺的会员的管理与维护" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fc1d85fb-eaff-4441-9dee-4241d37a3a22" LastKnownName="本店铺的会员的管理与维护" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="925d340d-f084-4137-8e13-ff351fd63183" name="店长" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="161aab35-210c-4919-85fe-0cf3ed1ca260" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="be9de9d0-390f-4318-8a29-e180092e31f3" name="本店铺的会员的管理与维护" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e8b4865d-8604-4700-99eb-cefdea560063" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="851e85e8-80a0-4c43-9d0c-7220ae8f9666" />
+          </association>
+          <association Id="ed27f353-34a8-4554-9879-f38cf8ff997e" isDerived="false" sourceEndRoleName="店长" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b2962a88-1722-43b5-8d35-dd53f72ce1be" LastKnownName="会员的积分转账" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b4b14ccc-b462-4159-b902-f43b9a64224a" name="店长" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d4b2b923-8740-41e9-9d7d-1faae931063b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="152208d8-ed8f-4217-a3db-1b6a26c59fed" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="844e3746-a95e-4ee5-a223-f82b936f90c5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="798c553c-7e5c-4245-a1d3-657fc2cc1bea" />
+          </association>
+          <association Id="e88ef941-2730-4131-ace4-e3cb845e5095" isDerived="false" sourceEndRoleName="店长" targetEndRoleName="积分的消费" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ec206d7c-a37f-4cfd-8f58-c04f31df39ce" LastKnownName="积分的消费" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8ba0c282-4bdd-47f2-aa74-f924142e54f4" name="店长" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0343f78e-715d-49df-9311-f9c8c7610d9a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="43bd7440-cbaa-4bef-b89c-3c005e595adc" name="积分的消费" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="83509779-7c52-46e2-8edc-d5a01d42f3ab" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="daea17e2-10fa-42d2-a3d6-32926aab24cc" />
+          </association>
+          <association Id="f85bc009-1088-46b9-9aa5-36abd7f69a83" isDerived="false" sourceEndRoleName="店长" targetEndRoleName="积分兑换" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b81b5983-cf92-42e7-9c6d-181f8e8c066d" LastKnownName="积分的兑换" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="570e54b9-30f8-4b47-ac17-3b3cd9984263" name="店长" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ec435f2b-17bc-4995-8a99-36b537bb43de" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d780a10c-7c21-44e5-a70f-76ca8d2b0b11" name="积分兑换" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ac5f4aad-58d2-4f7b-a75c-61c78ad4ecdb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ab79f082-82c6-40e5-bced-3966ffdba57d" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7853701b-5b3b-4552-a38b-97d6c320534e" name="用户认证" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f6b51500-bf50-4ffc-bf3a-67da856e0289" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fc1d85fb-eaff-4441-9dee-4241d37a3a22" name="本店铺的会员的管理与维护" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ec9cf6ad-1a4b-454a-aed0-d670dc7b913c" />
+        <extendedCases>
+          <extend Id="6c88b1e3-5f36-4667-9fa5-5921eafdcd0e">
+            <useCaseMoniker Id="12d577ff-8cdb-4bee-b38c-a7b59625f845" LastKnownName="会员卡号开卡、换卡和挂失" />
+            <elementDefinition Id="ac999ef7-f795-4cdb-b67c-0a94ee90c4b0" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="12d577ff-8cdb-4bee-b38c-a7b59625f845" name="会员卡号开卡、换卡和挂失" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cf41fbff-83f4-4eff-b888-b5e3188fbee1" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b2962a88-1722-43b5-8d35-dd53f72ce1be" name="会员的积分转账" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="78b2a6ab-3429-48d8-b76f-ac67184aa1dc" />
+        <extendedCases>
+          <extend Id="bfd79239-4730-4e4e-9bd7-54c7f51830a1">
+            <useCaseMoniker Id="6a27ccac-06a0-45c5-a96f-89b33ef0e097" LastKnownName="积分报表明细" />
+            <elementDefinition Id="77790c30-a80a-47c3-a3dc-c9791a713945" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6a27ccac-06a0-45c5-a96f-89b33ef0e097" name="积分报表明细" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cb935f1d-edc2-44b6-a4c3-d69fd3aea7ef" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ec206d7c-a37f-4cfd-8f58-c04f31df39ce" name="积分的消费" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0ad956ac-ea5e-48b2-bad2-b8b5902b3fed" />
+        <extendedCases>
+          <extend Id="d8dc2f86-17e2-4313-9a20-59bd602c9a95">
+            <useCaseMoniker Id="6a27ccac-06a0-45c5-a96f-89b33ef0e097" LastKnownName="积分报表明细" />
+            <elementDefinition Id="47a19e3e-f15b-43ec-812c-83abb0292395" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b81b5983-cf92-42e7-9c6d-181f8e8c066d" name="积分的兑换" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="29d404e6-bc6b-46ed-9ce9-6d5d997d8e9d" />
+        <extendedCases>
+          <extend Id="ab29b33a-5f80-4beb-8599-ce1d081233a8">
+            <useCaseMoniker Id="6a27ccac-06a0-45c5-a96f-89b33ef0e097" LastKnownName="积分报表明细" />
+            <elementDefinition Id="1bc7cb2a-7256-4c8a-912d-001ba093372f" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="5bf20150-66e4-4993-9005-f1aeb823878e" name="ModelingProject">
+    <elementDefinition Id="0bb84ad1-6fac-4819-8f4c-08641bbd1a60" />
+    <profileInstances>
+      <packageHasProfileInstances Id="afec7456-405c-4184-a501-23e8086e42b9">
+        <profileInstance Id="2aca3ad4-bdc0-43b7-87fb-ad9a32bcbb68" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c8e16a95-9dae-4207-acc0-41212469d568">
+        <profileInstance Id="55d2ae1d-0954-4df2-a261-bbe12d38fea4" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

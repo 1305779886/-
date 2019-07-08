@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="5989a570-f525-4f03-8e19-278bc8624a41" name="在校学生网上投诉活动图" linkedPackageId="53b994d0-6b7d-4e21-9cdf-52854f4d3e44" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="d14a2775-d7a5-4a7c-a930-0064a0cb2eff">
+      <elementDefinition Id="4ed4c080-684e-4d7b-9af6-f2c43720b4d3" />
+      <body>学生进入网站首页</body>
+      <annotatedElements>
+        <initialNodeMoniker Id="91c6db1b-4761-43cf-b87d-249e30e6d8f3" LastKnownName="Initial1" />
+      </annotatedElements>
+    </comment>
+    <comment Id="d88822a6-b73a-411f-8189-c27af4221bcd">
+      <elementDefinition Id="03ac6f78-65a0-4afd-9270-736275300a5e" />
+      <body>提交失败</body>
+      <annotatedElements>
+        <decisionNodeMoniker Id="f6f3b914-50b7-486d-9e79-2430464d6e92" LastKnownName="Decision1" />
+      </annotatedElements>
+    </comment>
+    <comment Id="5dbeb6bc-2cb8-49b8-968a-a503c00508a4">
+      <elementDefinition Id="c3c2de7d-b33c-4476-96eb-42537da255a7" />
+      <body>提交失败</body>
+      <annotatedElements>
+        <decisionNodeMoniker Id="f639aecc-2a9b-4c61-bdbb-ab0e58907982" LastKnownName="Decision2" />
+      </annotatedElements>
+    </comment>
+    <comment Id="a27d64ef-932b-4fb7-840b-b7bf1754533a">
+      <elementDefinition Id="14d3d072-fbd9-4813-a6f7-c2c27a1d0f1a" />
+      <body>取消当前操作</body>
+      <annotatedElements>
+        <decisionNodeMoniker Id="95941d60-1a9e-42e3-835d-40e6bb1fe9e5" LastKnownName="Decision3" />
+      </annotatedElements>
+    </comment>
+    <comment Id="a9663a6a-6a37-4f5b-9628-5ca0860f776f">
+      <elementDefinition Id="b6d57a63-2527-42a4-aea0-1dd60e8e0a3f" />
+      <body>继续其他操作
+</body>
+      <annotatedElements>
+        <activityFinalNodeMoniker Id="b696c760-a857-4358-8a25-da96f9a4aaf5" LastKnownName="ActivityFinal1" />
+      </annotatedElements>
+    </comment>
+    <comment Id="ee26c795-1d45-4acd-9994-c8f91ffbd9d2">
+      <elementDefinition Id="55fc8aad-81ec-46cf-8c48-1d0302539220" />
+      <body>查看明细结束</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="5dc3cf03-1aca-4e98-b34d-972aef64b7f1" LastKnownName="提取对象的信息内容" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="71524707-ed34-4e32-89b7-b9161a999055" name="在校学生网上投诉活动图" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="848af4bc-b4f7-48e0-bb32-2b16e491c71a" />
+        <nodes>
+          <initialNode Id="91c6db1b-4761-43cf-b87d-249e30e6d8f3" name="Initial1" isLeaf="false">
+            <elementDefinition Id="2769178c-f519-4303-a837-a55630eb608a" />
+            <flowNodeTargets>
+              <controlFlow Id="561e78d9-23eb-472f-bf77-6636bf66b639" isLeaf="false">
+                <opaqueActionMoniker Id="6af6a6cb-7f99-4bac-a31e-7aae006fa97b" LastKnownName="网上投诉" />
+                <elementDefinition Id="6b11fbad-a2ae-444e-836b-2f05239f1334" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="6af6a6cb-7f99-4bac-a31e-7aae006fa97b" name="网上投诉" isLeaf="false">
+            <elementDefinition Id="efa9ab57-3872-4351-9478-36ad56d0ccc0" />
+            <flowNodeTargets>
+              <controlFlow Id="d6893993-27a9-489e-bc04-c2052ea4a888" isLeaf="false">
+                <forkNodeMoniker Id="bb83a410-3960-4410-8095-2d8ffbf0946c" LastKnownName="Fork1" />
+                <elementDefinition Id="bcdbcd99-8b72-4b0c-a6c0-60e878d7a52e" />
+              </controlFlow>
+              <controlFlow Id="c113358c-5ed3-483e-b7b5-e997f9565106" isLeaf="false">
+                <activityFinalNodeMoniker Id="b696c760-a857-4358-8a25-da96f9a4aaf5" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="c4fc4171-7560-4f13-91c0-7a24a42e5de3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode Id="bb83a410-3960-4410-8095-2d8ffbf0946c" name="Fork1" isLeaf="false">
+            <elementDefinition Id="e66afb3d-b0f4-4583-bd92-8068940f7c25" />
+            <flowNodeTargets>
+              <controlFlow Id="6023ec0a-7a12-4a57-ab20-078253984a72" isLeaf="false">
+                <opaqueActionMoniker Id="ecf4469f-6bf1-459f-a786-1e958e489ebb" LastKnownName="创建投诉信息" />
+                <elementDefinition Id="b459d6f2-7a9f-44ac-ae52-60eca932c2a9" />
+              </controlFlow>
+              <controlFlow Id="e7727dc0-154a-4fda-9bce-ff691f1e2d98" isLeaf="false">
+                <opaqueActionMoniker Id="686ac735-46ee-4aec-ae7d-1ef1a2fb5656" LastKnownName="编辑投诉信息" />
+                <elementDefinition Id="d1e0683d-cdfe-486d-ad53-3a85584c7dc9" />
+              </controlFlow>
+              <controlFlow Id="1e2e1214-d484-4d04-b5ef-ff29b78ef4ee" isLeaf="false">
+                <opaqueActionMoniker Id="046d11c1-bd02-4582-8fdf-ba02b43384a1" LastKnownName="取消投诉信息" />
+                <elementDefinition Id="de003c7a-be61-4ac1-9e99-840b6b6eb665" />
+              </controlFlow>
+              <controlFlow Id="8dcb4615-4bb9-4d29-9538-18871e1a0dd3" isLeaf="false">
+                <opaqueActionMoniker Id="4578a599-6a67-484c-9608-398a399972e8" LastKnownName="浏览投诉信息" />
+                <elementDefinition Id="3bb17024-04b8-4a0b-8d9c-073fe399ea23" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction Id="ecf4469f-6bf1-459f-a786-1e958e489ebb" name="创建投诉信息" isLeaf="false">
+            <elementDefinition Id="14d0e60c-1983-46fb-b2f6-569dc999f7b9" />
+            <flowNodeTargets>
+              <controlFlow Id="974d3d30-e324-41ff-a65c-644550782d2e" isLeaf="false">
+                <opaqueActionMoniker Id="5b889a52-1922-42f0-8ee5-6e294a26a49c" LastKnownName="填写投诉信息" />
+                <elementDefinition Id="6c8cb6c1-5a7f-44cb-ab04-97ec58d8ded4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="686ac735-46ee-4aec-ae7d-1ef1a2fb5656" name="编辑投诉信息" isLeaf="false">
+            <elementDefinition Id="76820300-bd19-496e-9095-b1a5aba4d2db" />
+            <flowNodeTargets>
+              <controlFlow Id="2df789cf-645a-43bd-9812-d146f8bc8954" isLeaf="false">
+                <opaqueActionMoniker Id="5a38803c-36d8-464b-9522-23bedfb62f96" LastKnownName="修改原有的投诉信息" />
+                <elementDefinition Id="4b50ee07-19a6-426b-8429-151e1e35021b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4578a599-6a67-484c-9608-398a399972e8" name="浏览投诉信息" isLeaf="false">
+            <elementDefinition Id="3e96c837-a489-4aba-ad1f-8f67b99b6f28" />
+            <flowNodeTargets>
+              <controlFlow Id="c50af50d-f65e-43b7-940d-609a5abca1da" isLeaf="false">
+                <opaqueActionMoniker Id="5853b8c0-4c81-4dd7-9a7b-85e05949425b" LastKnownName="获取接收选定的对象" />
+                <elementDefinition Id="fca921d1-3d26-4a5d-a2ac-28460af34f25" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="046d11c1-bd02-4582-8fdf-ba02b43384a1" name="取消投诉信息" isLeaf="false">
+            <elementDefinition Id="680c27df-7013-448b-bc57-53909dbb4074" />
+            <flowNodeTargets>
+              <controlFlow Id="4e026da0-a12d-4159-aff2-b922a9ba3a63" isLeaf="false">
+                <opaqueActionMoniker Id="387a6285-1a7a-4f19-bcd6-bee8af272771" LastKnownName="选中要取消投诉信息" />
+                <elementDefinition Id="1063ebd4-54ba-45de-b748-2ff295dc26e3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5b889a52-1922-42f0-8ee5-6e294a26a49c" name="填写投诉信息" isLeaf="false">
+            <elementDefinition Id="03150c55-d915-4062-9016-cdc1212989f4" />
+            <flowNodeTargets>
+              <controlFlow Id="3e4f3b89-1587-4277-916b-c6b82dbb9671" isLeaf="false">
+                <opaqueActionMoniker Id="29359d5c-900c-4e87-aed2-dcc615ca203f" LastKnownName="提交投诉信息" />
+                <elementDefinition Id="c430433f-d1bd-4f46-b679-b8301206f9cb" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="29359d5c-900c-4e87-aed2-dcc615ca203f" name="提交投诉信息" isLeaf="false">
+            <elementDefinition Id="8603229f-992a-4119-9ef6-1df7e11a9e70" />
+            <flowNodeTargets>
+              <controlFlow Id="a5ea8102-9b3d-4378-8e95-3f50fc7d6b33" isLeaf="false">
+                <decisionNodeMoniker Id="f6f3b914-50b7-486d-9e79-2430464d6e92" LastKnownName="Decision1" />
+                <elementDefinition Id="694ca3a7-6ba2-4bd9-8ccf-f68a610fe1a8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="17ada326-0784-4462-b3f8-afdea06d861c" name="提交成功" isLeaf="false">
+            <elementDefinition Id="7ab2f2fa-e366-4ff8-bc8f-af4fd4fe04f5" />
+            <flowNodeTargets>
+              <controlFlow Id="4b32836c-2fff-4e72-ba8a-dca67ff85f67" isLeaf="false">
+                <joinNodeMoniker Id="bbda6849-5a8b-47cc-a101-3fb1b9b9b8a5" LastKnownName="Join1" />
+                <elementDefinition Id="5e4519f6-6676-470a-81a1-b9a2c3879c6e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="f6f3b914-50b7-486d-9e79-2430464d6e92" name="Decision1" isLeaf="false">
+            <elementDefinition Id="9d10ca65-8660-4e5c-9138-2d56af0ad70c" />
+            <flowNodeTargets>
+              <controlFlow Id="a50520ed-22d7-40b1-b57b-c5c7530ea84e" isLeaf="false">
+                <opaqueActionMoniker Id="17ada326-0784-4462-b3f8-afdea06d861c" LastKnownName="提交成功" />
+                <elementDefinition Id="83e338cc-3034-4d8f-a8a0-5b2b1e2d1343" />
+              </controlFlow>
+              <controlFlow Id="581d61d8-4a7a-45fd-977b-5c959534f720" isLeaf="false">
+                <opaqueActionMoniker Id="5b889a52-1922-42f0-8ee5-6e294a26a49c" LastKnownName="填写投诉信息" />
+                <elementDefinition Id="23d6d746-545d-4d5d-b10e-7fa551aa773c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="5a38803c-36d8-464b-9522-23bedfb62f96" name="修改原有的投诉信息" isLeaf="false">
+            <elementDefinition Id="91c29fe9-e7d7-494a-81d7-6a8d37ab0def" />
+            <flowNodeTargets>
+              <controlFlow Id="fa5a45db-2e83-4b94-a850-a05f742f1c74" isLeaf="false">
+                <opaqueActionMoniker Id="b7c16f8e-0f7c-4fa2-834f-1d4e9809f527" LastKnownName="提交投诉信息" />
+                <elementDefinition Id="3c03a4f1-9416-41b9-8e12-8cca581f6e7f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b7c16f8e-0f7c-4fa2-834f-1d4e9809f527" name="提交投诉信息" isLeaf="false">
+            <elementDefinition Id="cee678d1-027e-4cff-ad2d-bd00fc598569" />
+            <flowNodeTargets>
+              <controlFlow Id="a1c8b909-dc57-4846-94d0-95e62127b8e4" isLeaf="false">
+                <decisionNodeMoniker Id="f639aecc-2a9b-4c61-bdbb-ab0e58907982" LastKnownName="Decision2" />
+                <elementDefinition Id="63664487-5b02-46b4-9e5c-0567ef27eaad" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="f639aecc-2a9b-4c61-bdbb-ab0e58907982" name="Decision2" isLeaf="false">
+            <elementDefinition Id="35cec742-e0e6-485f-89c6-ad93d785d589" />
+            <flowNodeTargets>
+              <controlFlow Id="2a4e5422-2e7e-4a31-930a-15f1f9e1a656" isLeaf="false">
+                <opaqueActionMoniker Id="5f70d3a4-4627-4ce7-8cf9-cc52efa2e4c1" LastKnownName="提交成功" />
+                <elementDefinition Id="c696c7ca-5988-4bbe-8050-55378688d4a6" />
+              </controlFlow>
+              <controlFlow Id="77aee239-fc93-4ae4-8361-b150e2a08c4d" isLeaf="false">
+                <opaqueActionMoniker Id="5a38803c-36d8-464b-9522-23bedfb62f96" LastKnownName="修改原有的投诉信息" />
+                <elementDefinition Id="ed1381cd-cf2f-451a-82e9-997b988f5bbb" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="5f70d3a4-4627-4ce7-8cf9-cc52efa2e4c1" name="提交成功" isLeaf="false">
+            <elementDefinition Id="89250c20-8822-4140-b5e6-33ee1d80e4b8" />
+            <flowNodeTargets>
+              <controlFlow Id="89159426-f03d-4acf-98b0-3d8999a2401c" isLeaf="false">
+                <joinNodeMoniker Id="bbda6849-5a8b-47cc-a101-3fb1b9b9b8a5" LastKnownName="Join1" />
+                <elementDefinition Id="eb656da0-b705-44fb-b402-d48ab6b32068" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="387a6285-1a7a-4f19-bcd6-bee8af272771" name="选中要取消投诉信息" isLeaf="false">
+            <elementDefinition Id="414aa488-9f2d-47e7-af4e-8fb07342dd8f" />
+            <flowNodeTargets>
+              <controlFlow Id="c203d738-b702-4e1f-a335-0715f5ecbd1a" isLeaf="false">
+                <opaqueActionMoniker Id="c665870b-28ac-40ef-a27e-7dd7539418d0" LastKnownName="系统对取消操作发出警告" />
+                <elementDefinition Id="288a1692-fa43-4136-ab4c-a202c71d11e7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="95941d60-1a9e-42e3-835d-40e6bb1fe9e5" name="Decision3" isLeaf="false">
+            <elementDefinition Id="495544f7-3a29-4455-9e27-fe8e257413c4" />
+            <flowNodeTargets>
+              <controlFlow Id="ada4075c-d344-4d33-bc15-f227174db304" isLeaf="false">
+                <opaqueActionMoniker Id="d6a86c08-ed8d-4d11-96e2-c3622e659742" LastKnownName="取消成功" />
+                <elementDefinition Id="e736ae36-f8f0-49cb-ad37-17bae91b5935" />
+              </controlFlow>
+              <controlFlow Id="86db1bb5-e432-4807-8fdc-e2a527a507ba" isLeaf="false">
+                <opaqueActionMoniker Id="046d11c1-bd02-4582-8fdf-ba02b43384a1" LastKnownName="取消投诉信息" />
+                <elementDefinition Id="191b8b7a-e33e-4981-9677-f5c5be3e55da" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="d6a86c08-ed8d-4d11-96e2-c3622e659742" name="取消成功" isLeaf="false">
+            <elementDefinition Id="35277267-d00a-48a6-b106-77fe8905b070" />
+            <flowNodeTargets>
+              <controlFlow Id="2ecc28e8-0a0d-4920-a1f0-42e1b14a2b13" isLeaf="false">
+                <joinNodeMoniker Id="bbda6849-5a8b-47cc-a101-3fb1b9b9b8a5" LastKnownName="Join1" />
+                <elementDefinition Id="77190a19-b82a-4a3f-a690-9e0e174932ae" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c665870b-28ac-40ef-a27e-7dd7539418d0" name="系统对取消操作发出警告" isLeaf="false">
+            <elementDefinition Id="42b2ae3c-db18-42b9-b088-59f9f4f4dc34" />
+            <flowNodeTargets>
+              <controlFlow Id="4fc97918-5bfe-4783-b9b0-25cbedc5ba72" isLeaf="false">
+                <decisionNodeMoniker Id="95941d60-1a9e-42e3-835d-40e6bb1fe9e5" LastKnownName="Decision3" />
+                <elementDefinition Id="97edbad8-ad06-4a1a-802d-bd1fada70b6f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5853b8c0-4c81-4dd7-9a7b-85e05949425b" name="获取接收选定的对象" isLeaf="false">
+            <elementDefinition Id="7f267d30-072d-4d59-ae34-7d58ef317fcb" />
+            <flowNodeTargets>
+              <controlFlow Id="b8225f00-3134-4611-b004-cfcb98f10b10" isLeaf="false">
+                <opaqueActionMoniker Id="5dc3cf03-1aca-4e98-b34d-972aef64b7f1" LastKnownName="提取对象的信息内容" />
+                <elementDefinition Id="42aa4669-3c5f-4a58-9fdf-cf64d8be531c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5dc3cf03-1aca-4e98-b34d-972aef64b7f1" name="提取对象的信息内容" isLeaf="false">
+            <elementDefinition Id="102a5567-341d-4ed8-aaaa-7a864b736bcb" />
+            <flowNodeTargets>
+              <controlFlow Id="5e2d9aad-e7d0-4b94-b32e-2e098f7153f5" isLeaf="false">
+                <joinNodeMoniker Id="bbda6849-5a8b-47cc-a101-3fb1b9b9b8a5" LastKnownName="Join1" />
+                <elementDefinition Id="c7a8547d-4a1a-4563-8aeb-028cef718329" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode Id="bbda6849-5a8b-47cc-a101-3fb1b9b9b8a5" name="Join1" isLeaf="false">
+            <elementDefinition Id="69341a53-bd55-479d-bc4f-56258929eff9" />
+            <flowNodeTargets>
+              <controlFlow Id="25a01ff9-d8d6-41e5-91c5-1cb32a0b6954" isLeaf="false">
+                <opaqueActionMoniker Id="6af6a6cb-7f99-4bac-a31e-7aae006fa97b" LastKnownName="网上投诉" />
+                <elementDefinition Id="003e1911-68ef-470a-b8a9-c9ba27186b1a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <activityFinalNode Id="b696c760-a857-4358-8a25-da96f9a4aaf5" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="34017299-3549-446c-8ebd-ab10b1c80627" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="53b994d0-6b7d-4e21-9cdf-52854f4d3e44" name="ModelingProject">
+    <elementDefinition Id="96cb32e6-6290-4041-a200-5ec44e3bd4ca" />
+    <profileInstances>
+      <packageHasProfileInstances Id="9c7abeb1-f046-44ef-ab69-1ec57ac87e10">
+        <profileInstance Id="b93f6da3-720c-42d3-89d7-b3695e1ea9d7" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="9d3408f8-dab8-41fd-9d3c-1cd6303e6d85">
+        <profileInstance Id="6f0fde57-76af-450b-acc5-80fe78a3a968" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="6cdf44a3-e593-4766-bcde-5642c57473f0" name="登录系统" linkedPackageId="fbbb1894-1750-4ba7-a1fe-6e9707d513d0" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="319f14e1-94aa-49e3-81db-fc28a5b8df36" name="管理员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c9c6d8ed-6a9a-48e3-988f-798243bb622a" />
+        <targetEnds>
+          <association Id="61d03c41-cc8d-4e06-82a3-2451fa0dcb8d" isDerived="false" sourceEndRoleName="管理员" targetEndRoleName="访问登陆界面" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="85f16a5b-76f3-41e2-bf97-8a36179abc49" LastKnownName="访问登陆界面" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0010c55e-5387-4c8c-827c-fe6c7ced7500" name="管理员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3ef44a0d-848e-4ea4-97a3-84acaa682c74" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="68cab19a-8d82-4d41-8236-96bf1503152f" name="访问登陆界面" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="af58821e-b3b6-4abe-9c62-cfbae29d9fe5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d32e806a-9ec8-4a21-8e64-5444b5493d16" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="5fea62d4-088e-44b3-a8c1-c3282380e8b2" name="服务中心队长" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5292f1a2-1863-4ad4-b86a-11a8d8bfb334" />
+        <targetEnds>
+          <association Id="2ae5eb04-18aa-425e-8114-608db01dabdb" isDerived="false" sourceEndRoleName="服务中心队长" targetEndRoleName="访问登陆界面" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="85f16a5b-76f3-41e2-bf97-8a36179abc49" LastKnownName="访问登陆界面" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5a9945ae-4c12-4f4c-90dc-05ce173e5af3" name="服务中心队长" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="aaac39b0-864d-47cd-ac27-473f81046f7e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ad57667a-6927-4b47-bd6b-5108db992ce7" name="访问登陆界面" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="973004a4-2f0d-47e4-b3fd-b35dab1d5ac1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9c48c25b-f8e9-458a-afda-1a47b0d8b3a9" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="bc2b725c-3a86-42fb-8e20-af3c06aa1825" name="维修人员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e7de4b73-dfb6-440e-9b10-517f8212e138" />
+        <targetEnds>
+          <association Id="675e33c2-155e-4b45-8566-4ea3bab53fcc" isDerived="false" sourceEndRoleName="维修人员" targetEndRoleName="访问登陆界面" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="85f16a5b-76f3-41e2-bf97-8a36179abc49" LastKnownName="访问登陆界面" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c0874a02-5c1c-4d5e-8d81-66c70922de61" name="维修人员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1d988865-2ff8-42d2-b815-e499b5763cfd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e0a937af-5d12-41d8-ae70-3ffac354fc1e" name="访问登陆界面" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a9dad2be-e9a3-46e1-8641-679fbdcc15e3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="efb5538e-21cb-4091-8e86-d4e479ce1b39" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="7d506b23-2607-4e46-a200-d99a8ba01073" name="在校学生" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ee03e2ff-3d5f-4ead-b334-1849595f38c9" />
+        <targetEnds>
+          <association Id="9486ed77-83d6-4351-b96f-df6abfaa0cb1" isDerived="false" sourceEndRoleName="在校学生" targetEndRoleName="访问登陆界面" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="85f16a5b-76f3-41e2-bf97-8a36179abc49" LastKnownName="访问登陆界面" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b454c541-62c8-4689-a50b-01c3c860ab3a" name="在校学生" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c902eadc-09bd-4cf1-bca2-152e3b917199" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7203614d-415c-451b-830a-1f4f523f3321" name="访问登陆界面" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="812e65d5-47ef-4c9f-a392-88d2733c69dc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5cb887a2-5a45-4b0b-8343-c6086bfae501" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="85f16a5b-76f3-41e2-bf97-8a36179abc49" name="访问登陆界面" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a2678804-6f40-499b-a650-3560d2f7e573" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="fbbb1894-1750-4ba7-a1fe-6e9707d513d0" name="ModelingProject">
+    <elementDefinition Id="96cb32e6-6290-4041-a200-5ec44e3bd4ca" />
+    <profileInstances>
+      <packageHasProfileInstances Id="9d94d1f9-4c10-4c11-b841-f156b5508e28">
+        <profileInstance Id="a9f98d6d-1b22-4bb2-8648-7b61f79c19ad" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="989a7c79-1ee7-4e1d-b832-fe440d6b430d">
+        <profileInstance Id="674f9c40-17e1-451c-ae4e-5a455395fbac" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

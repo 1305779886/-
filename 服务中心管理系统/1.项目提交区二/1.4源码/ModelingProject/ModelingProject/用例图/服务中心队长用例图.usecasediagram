@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="86da100c-7076-4307-a7da-aeb178bd88dc" name="服务中心队长用例图" linkedPackageId="3580ec7b-4805-4cdc-ba03-c92bbe493358" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="7cc27fe1-0f4b-4003-9224-af3a731fb759" name="服务中心队长" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f0123a86-4535-4f75-9157-1d20dd7ebe67" />
+        <targetEnds>
+          <association Id="66aabb7a-d527-4e36-a69c-117521777e5a" isDerived="false" sourceEndRoleName="服务中心队长" targetEndRoleName="用户认证" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c3f511a3-3188-43b5-a02a-d47e04d2ad0f" LastKnownName="用户认证" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bfe2ef0b-f283-4ad1-b61c-7a9b2e1aa4d5" name="服务中心队长" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7e64892b-38b4-4d03-84df-537856d607f7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="98a40654-19ff-4eba-b14e-b973d5467cf2" name="用户认证" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3d668d4f-8f74-414a-9cbb-3f2afd4b6e1e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4585f484-41d0-4e0a-9989-28d699c8cf58" />
+          </association>
+          <association Id="b163bda8-08b3-45af-a33b-cb94cd5a52a5" isDerived="false" sourceEndRoleName="服务中心队长" targetEndRoleName="失物招领" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7d93ab68-eb01-439f-8996-a7e939f4c96a" LastKnownName="失物招领" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3c8d5ebf-c634-466e-bfaf-e488f22e0aed" name="服务中心队长" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f59d29fa-cdb2-48c7-8aeb-9c1b60fc5da6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b6d97d83-ae00-4776-9f27-6cabb1342f3b" name="失物招领" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0bd0455b-f302-4d11-b200-d1e5229fea45" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="be6f6ff5-0095-48a7-ab28-6e6f1307bee4" />
+          </association>
+          <association Id="b87cf930-a7f6-47e3-8122-a17519b953d7" isDerived="false" sourceEndRoleName="服务中心队长" targetEndRoleName="网上申报" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1ef716f2-9b3d-4888-9094-28f65da16bee" LastKnownName="网上申报" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1649f43d-fb1f-427f-a5b5-c37fd41eed20" name="服务中心队长" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4b106af3-62a1-4eef-9661-bdb46eb4398e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="da7f12ea-07d0-4251-af84-38cdd49cf34b" name="网上申报" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1cdd1140-13e7-446d-b007-068b193af4bc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ed936eed-b882-41e4-ae8b-029c8503494e" />
+          </association>
+          <association Id="598fa5dd-e8db-4fb1-83fe-9c2894a7b2ea" isDerived="false" sourceEndRoleName="服务中心队长" targetEndRoleName="电话报修" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="94d8a59f-21c5-48fb-9170-c854d07640ba" LastKnownName="电话报修" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="29546a57-0dfd-4a6c-b46e-81c421211c26" name="服务中心队长" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="50c4dc99-3dde-4249-931e-9a0e8a36b93d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="36b29edc-f8fa-414b-998c-1f37db3ebec2" name="电话报修" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="eefaf0a7-2908-4053-b048-094948688918" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0f8f6a05-78b8-4a41-8242-a9759adcd9e9" />
+          </association>
+          <association Id="9979fead-4b78-4ffa-9ca7-8b6112b5c61f" isDerived="false" sourceEndRoleName="服务中心队长" targetEndRoleName="查看网上投诉" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8d439ed3-9426-4f9e-af2e-037cb5743584" LastKnownName="查看网上投诉" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2e6daec0-e4e6-4c34-bd19-9cdc567efea5" name="服务中心队长" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ba13bc5d-35d5-43b4-a662-8d4bcb36ebf3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="222f7ea3-1521-4afe-9af0-8707c2225348" name="查看网上投诉" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="05aaa617-314a-4393-a23e-864255ed09e0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4dc25a6c-ea6c-4b62-8151-2b7340bc87ba" />
+          </association>
+          <association Id="423a35ef-bc6e-476a-b5bf-6ef295f0a7ef" isDerived="false" sourceEndRoleName="服务中心队长" targetEndRoleName="查看维修信息反馈" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="09fdd175-08c1-4bdc-9aaf-5b209cf254a7" LastKnownName="查看维修信息反馈" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="382af35b-c93e-4ca1-b9cc-9e270a92ab53" name="服务中心队长" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d9c9b0a5-62e3-4d17-9c2d-0c14838578f7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="60cfb2f5-d8a4-4274-b8a1-16c97c6491c0" name="查看维修信息反馈" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e1f33486-c68e-4e22-9f67-37644a257205" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="09451fdd-745f-4b7b-8ac6-423773149ed6" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c3f511a3-3188-43b5-a02a-d47e04d2ad0f" name="用户认证" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1bdde71b-d47a-48ef-b312-4763d0e75d2f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7d93ab68-eb01-439f-8996-a7e939f4c96a" name="失物招领" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5f49b30a-32f5-4e0d-89d3-6fc84f9bf4cc" />
+        <extendedCases>
+          <extend Id="58ae4a44-9035-4fb4-b44e-ec628461cfd9">
+            <useCaseMoniker Id="fa7becd3-ef7e-4449-aecc-a42785c1f772" LastKnownName="登记失主信息、显示物品已被领取" />
+            <elementDefinition Id="0beef98a-1d15-43dd-b68f-7f69c191c9db" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fa7becd3-ef7e-4449-aecc-a42785c1f772" name="登记失主信息、显示物品已被领取" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d0aa9094-4ce3-4065-a2e4-24c018add874" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1ef716f2-9b3d-4888-9094-28f65da16bee" name="网上申报" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cb60742f-c0b3-4075-9b7e-97d2eae834ad" />
+        <extendedCases>
+          <extend Id="84fb9cb4-6930-4f09-8f83-dfd2e276ce02">
+            <useCaseMoniker Id="7d3d2c68-d599-4cbe-87c2-7399dcc6a11a" LastKnownName="报修服务" />
+            <elementDefinition Id="e3d961c2-8010-410c-ad2f-4e6a6092de26" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="94d8a59f-21c5-48fb-9170-c854d07640ba" name="电话报修" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="287818b3-2c9e-4d73-8c7e-de876e6bead6" />
+        <extendedCases>
+          <extend Id="d6632834-7b4b-40fa-86ac-837dca99720a">
+            <useCaseMoniker Id="7d3d2c68-d599-4cbe-87c2-7399dcc6a11a" LastKnownName="报修服务" />
+            <elementDefinition Id="a2f52dce-5ce7-4d68-820b-4ead38401ce7" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7d3d2c68-d599-4cbe-87c2-7399dcc6a11a" name="报修服务" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e599708c-545f-4812-86aa-e5f36594de5d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8d439ed3-9426-4f9e-af2e-037cb5743584" name="查看网上投诉" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f17d24a0-8d0c-465e-940b-e1f077078380" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="09fdd175-08c1-4bdc-9aaf-5b209cf254a7" name="查看维修信息反馈" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="962e3f7c-ec50-4daa-b65a-889899a5a104" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="3580ec7b-4805-4cdc-ba03-c92bbe493358" name="ModelingProject">
+    <elementDefinition Id="96cb32e6-6290-4041-a200-5ec44e3bd4ca" />
+    <profileInstances>
+      <packageHasProfileInstances Id="01623c36-c394-47be-94f9-fad52a800b7b">
+        <profileInstance Id="63457607-0411-4c21-8d87-32d4aae884ed" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="0e83026d-a9a3-411d-99a9-ddf58523a074">
+        <profileInstance Id="cbf4393d-640d-4dfe-a642-442c7367f6e0" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>
