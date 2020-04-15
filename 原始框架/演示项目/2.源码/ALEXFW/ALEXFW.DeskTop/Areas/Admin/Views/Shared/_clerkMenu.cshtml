@@ -1,0 +1,19 @@
+﻿<br />
+<div class="panel-group admin-sideMenu" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-v">
+        <div class="panel-heading" role="tab" id="headingAdmin">
+            <h4 class="panel-title" style="color:#333">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseAdmin" aria-expanded="false" aria-controls="collapseAdmin">
+                    <i class="glyphicon glyphicon-lock"></i>    业务员管理
+                </a>
+            </h4>
+        </div>
+        <div id="collapseAdmin" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingAdmin">
+            <div class="panel-body" style="color:#333">
+                <a href="@Url.Action("Index","Member")" title="" target="layout">用户管理 </a>
+                <a href="@Url.Action("Index","Present")" title="" target="layout">礼品分类 </a>
+                <a href="@Url.Action("Index","Gift")" title="" target="layout">礼品管理 </a>
+            </div>
+        </div>
+    </div>
+</div>
