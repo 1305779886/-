@@ -159,30 +159,30 @@ namespace ALEXFW.DeskTop.Migrations
             context.SaveChanges();
         }
 
-        //    public static void Students(DBContext context)
-        //    {
-        //        Students students = new Students();
-        //        students.Index = Guid.NewGuid();
-        //        students.Username = "Alex";
-        //        students.CreateDate = DateTime.Now;
-        //        students.LastLoginDateTime = DateTime.Now;
-        //        students.PersonName = "余剑";
-        //        students.SetPassword("123456");
-        //        students.Avatar = "";
-        //        context.Students.Add(students);
-        //        context.SaveChanges();
+        //public static void Students(DBContext context)
+        //{
+        //    Students students = new Students();
+        //    students.Index = Guid.NewGuid();
+        //    students.Username = "Alex";
+        //    students.CreateDate = DateTime.Now;
+        //    students.LastLoginDateTime = DateTime.Now;
+        //    students.PersonName = "余剑";
+        //    students.SetPassword("123456");
+        //    students.Avatar = "";
+        //    context.Students.Add(students);
+        //    context.SaveChanges();
 
-        //        Students students1 = new Students();
-        //        students1.Index = Guid.NewGuid();
-        //        students1.Username = "AcrossEternal";
-        //        students1.CreateDate = DateTime.Now;
-        //        students1.LastLoginDateTime = DateTime.Now;
-        //        students1.PersonName = "跨越永恒";
-        //        students1.SetPassword("123456");
-        //        students1.Avatar = "";
-        //        context.Students.Add(students1);
-        //        context.SaveChanges();
-        //    }
+        //    Students students1 = new Students();
+        //    students1.Index = Guid.NewGuid();
+        //    students1.Username = "AcrossEternal";
+        //    students1.CreateDate = DateTime.Now;
+        //    students1.LastLoginDateTime = DateTime.Now;
+        //    students1.PersonName = "跨越永恒";
+        //    students1.SetPassword("123456");
+        //    students1.Avatar = "";
+        //    context.Students.Add(students1);
+        //    context.SaveChanges();
         //}
     }
 }
+
