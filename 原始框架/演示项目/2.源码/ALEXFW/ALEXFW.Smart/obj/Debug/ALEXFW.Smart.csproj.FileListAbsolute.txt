@@ -4,3 +4,9 @@ C:\2017Across\第3组\01项目提交区\2、源码\ALEXFW\ALEXFW.Smart\bin\Debug
 C:\2017Across\第3组\01项目提交区\2、源码\ALEXFW\ALEXFW.Smart\obj\Debug\ALEXFW.Smart.csproj.CoreCompileInputs.cache
 C:\2017Across\第3组\01项目提交区\2、源码\ALEXFW\ALEXFW.Smart\obj\Debug\ALEXFW.Smart.dll
 C:\2017Across\第3组\01项目提交区\2、源码\ALEXFW\ALEXFW.Smart\obj\Debug\ALEXFW.Smart.pdb
+E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.Smart\bin\Debug\ALEXFW.Smart.xml
+E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.Smart\bin\Debug\ALEXFW.Smart.dll
+E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.Smart\bin\Debug\ALEXFW.Smart.pdb
+E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.Smart\obj\Debug\ALEXFW.Smart.csproj.CoreCompileInputs.cache
+E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.Smart\obj\Debug\ALEXFW.Smart.dll
+E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.Smart\obj\Debug\ALEXFW.Smart.pdb

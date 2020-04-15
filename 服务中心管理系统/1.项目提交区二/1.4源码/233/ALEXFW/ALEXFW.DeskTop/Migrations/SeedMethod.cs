@@ -90,7 +90,7 @@ namespace ALEXFW.DeskTop.Migrations
             context.SaveChanges();
         }
         /// <summary>
-        /// 添加一名管理员用户，权限是系统管理员
+        /// 添加一名管理员用户，权限是学生服务中心管理员
         /// </summary>
         /// <param name="context"></param>
         public static void Admin(DBContext context)
@@ -108,7 +108,7 @@ namespace ALEXFW.DeskTop.Migrations
         }
 
         /// <summary>
-        /// 添加一名管理员用户，权限是店铺管理员
+        /// 添加一名管理员用户，权限是学生服务中心队长
         /// </summary>
         /// <param name="context"></param>
         public static void Mangager(DBContext context)
@@ -127,7 +127,7 @@ namespace ALEXFW.DeskTop.Migrations
         }
 
         /// <summary>
-        /// 添加一名管理员用户，权限是业务员
+        /// 添加一名管理员用户，权限是服务中心维修人员
         /// </summary>
         /// <param name="context"></param>
         public static void Employee(DBContext context)
@@ -145,6 +145,10 @@ namespace ALEXFW.DeskTop.Migrations
             context.SaveChanges();
         }
 
+        /// <summary>
+        /// 添加一名用户，权限是学生
+        /// </summary>
+        /// <param name="context"></param>
         public static void Students(DBContext context)
         {
             Admin admin = new Admin();

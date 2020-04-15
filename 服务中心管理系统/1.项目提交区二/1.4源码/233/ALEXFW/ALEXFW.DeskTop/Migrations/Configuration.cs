@@ -14,16 +14,16 @@ namespace ALEXFW.DeskTop.Migrations
 
         protected override void Seed(ALEXFW.DataAccess.DBContext context)
         {
-            context.Database.ExecuteSqlCommand("delete admins");
-            context.Database.ExecuteSqlCommand("delete students");
-            context.Database.ExecuteSqlCommand("delete dorms");
-            context.Database.ExecuteSqlCommand("delete groupTeams");
-            SeedMethod.Dorms(context);
-            SeedMethod.GroupTeam(context);
+            context.Database.ExecuteSqlCommand("delete admins");  //管理员用户
+            context.Database.ExecuteSqlCommand("delete students");//学生用户 
+            context.Database.ExecuteSqlCommand("delete dorms");   //宿舍
+            context.Database.ExecuteSqlCommand("delete groupTeams"); //维修队伍
             SeedMethod.Admin(context);
-            SeedMethod.Students(context);
             SeedMethod.Employee(context);
             SeedMethod.Mangager(context);
+            SeedMethod.Dorms(context);
+            SeedMethod.GroupTeam(context);
+            SeedMethod.Students(context);
         }        
     }
 }
