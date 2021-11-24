@@ -175,3 +175,4 @@ E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\233\ALEXFW\A
 E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DeskTop\bin\roslyn\VBCSCompiler.exe
 E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DeskTop\bin\roslyn\VBCSCompiler.exe.config
 E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DeskTop\obj\Debug\ALEXFW.DeskTop.csproj.AssemblyReference.cache
+E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DeskTop\obj\Debug\ALEXFW.DeskTop.csproj.CopyComplete
