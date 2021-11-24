@@ -5,3 +5,9 @@ C:\2班\第3组\0.项目提交区\按用户角色跳转不同登录界面的框�
 C:\2班\第3组\0.项目提交区\按用户角色跳转不同登录界面的框架\ALEXFW\ALEXFW.Smart\obj\Debug\ALEXFW.Smart.dll
 C:\2班\第3组\0.项目提交区\按用户角色跳转不同登录界面的框架\ALEXFW\ALEXFW.Smart\obj\Debug\ALEXFW.Smart.pdb
 C:\2班\第3组\0.项目提交区\按用户角色跳转不同登录界面的框架\ALEXFW\ALEXFW.Smart\obj\Debug\ALEXFW.Smart.csprojAssemblyReference.cache
+E:\github\-\会员管理系统\ALEXFW\ALEXFW.Smart\bin\Debug\ALEXFW.Smart.xml
+E:\github\-\会员管理系统\ALEXFW\ALEXFW.Smart\bin\Debug\ALEXFW.Smart.dll
+E:\github\-\会员管理系统\ALEXFW\ALEXFW.Smart\bin\Debug\ALEXFW.Smart.pdb
+E:\github\-\会员管理系统\ALEXFW\ALEXFW.Smart\obj\Debug\ALEXFW.Smart.csproj.CoreCompileInputs.cache
+E:\github\-\会员管理系统\ALEXFW\ALEXFW.Smart\obj\Debug\ALEXFW.Smart.dll
+E:\github\-\会员管理系统\ALEXFW\ALEXFW.Smart\obj\Debug\ALEXFW.Smart.pdb

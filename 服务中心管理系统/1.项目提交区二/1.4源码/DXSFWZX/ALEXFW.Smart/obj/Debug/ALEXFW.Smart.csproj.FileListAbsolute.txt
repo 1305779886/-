@@ -1,0 +1,6 @@
+E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\DXSFWZX\ALEXFW.Smart\bin\Debug\ALEXFW.Smart.xml
+E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\DXSFWZX\ALEXFW.Smart\bin\Debug\ALEXFW.Smart.dll
+E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\DXSFWZX\ALEXFW.Smart\bin\Debug\ALEXFW.Smart.pdb
+E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\DXSFWZX\ALEXFW.Smart\obj\Debug\ALEXFW.Smart.csproj.CoreCompileInputs.cache
+E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\DXSFWZX\ALEXFW.Smart\obj\Debug\ALEXFW.Smart.dll
+E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\DXSFWZX\ALEXFW.Smart\obj\Debug\ALEXFW.Smart.pdb

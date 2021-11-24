@@ -25,8 +25,8 @@ E:\github\-\会员管理系统\ALEXFW\ALEXFW.Smart.EntityFramework\bin\Debug\ALE
 E:\github\-\会员管理系统\ALEXFW\ALEXFW.Smart.EntityFramework\bin\Debug\ALEXFW.Smart.xml
 E:\github\-\会员管理系统\ALEXFW\ALEXFW.Smart.EntityFramework\bin\Debug\EntityFramework.xml
 E:\github\-\会员管理系统\ALEXFW\ALEXFW.Smart.EntityFramework\bin\Debug\EntityFramework.SqlServer.xml
-E:\github\-\会员管理系统\ALEXFW\ALEXFW.Smart.EntityFramework\obj\Debug\ALEXFW.Smart.EntityFramework.csprojAssemblyReference.cache
 E:\github\-\会员管理系统\ALEXFW\ALEXFW.Smart.EntityFramework\obj\Debug\ALEXFW.Smart.EntityFramework.csproj.CoreCompileInputs.cache
 E:\github\-\会员管理系统\ALEXFW\ALEXFW.Smart.EntityFramework\obj\Debug\ALEXFW.Smart.EntityFramework.csproj.CopyComplete
 E:\github\-\会员管理系统\ALEXFW\ALEXFW.Smart.EntityFramework\obj\Debug\ALEXFW.Smart.EntityFramework.dll
 E:\github\-\会员管理系统\ALEXFW\ALEXFW.Smart.EntityFramework\obj\Debug\ALEXFW.Smart.EntityFramework.pdb
+E:\github\-\会员管理系统\ALEXFW\ALEXFW.Smart.EntityFramework\obj\Debug\ALEXFW.Smart.EntityFramework.csproj.AssemblyReference.cache

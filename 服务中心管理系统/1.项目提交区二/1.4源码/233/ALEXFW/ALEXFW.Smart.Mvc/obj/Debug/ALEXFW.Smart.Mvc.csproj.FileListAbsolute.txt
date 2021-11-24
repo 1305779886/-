@@ -77,8 +77,8 @@ E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\233\ALEXFW\A
 E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.Smart.Mvc\bin\Debug\zh-Hans\System.Web.WebPages.resources.dll
 E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.Smart.Mvc\bin\Debug\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.Smart.Mvc\bin\Debug\zh-Hans\System.Web.WebPages.Razor.resources.dll
-E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.Smart.Mvc\obj\Debug\ALEXFW.Smart.Mvc.csprojAssemblyReference.cache
 E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.Smart.Mvc\obj\Debug\ALEXFW.Smart.Mvc.csproj.CoreCompileInputs.cache
 E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.Smart.Mvc\obj\Debug\ALEXFW.Smart.Mvc.csproj.CopyComplete
 E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.Smart.Mvc\obj\Debug\ALEXFW.Smart.Mvc.dll
 E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.Smart.Mvc\obj\Debug\ALEXFW.Smart.Mvc.pdb
+E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.Smart.Mvc\obj\Debug\ALEXFW.Smart.Mvc.csproj.AssemblyReference.cache

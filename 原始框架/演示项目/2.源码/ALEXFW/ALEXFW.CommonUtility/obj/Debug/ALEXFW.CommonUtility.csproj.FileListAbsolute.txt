@@ -121,8 +121,8 @@ E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.CommonUtility\bin\D
 E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.CommonUtility\bin\Debug\zh-Hans\System.Web.WebPages.resources.dll
 E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.CommonUtility\bin\Debug\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.CommonUtility\bin\Debug\zh-Hans\System.Web.WebPages.Razor.resources.dll
-E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.CommonUtility\obj\Debug\ALEXFW.CommonUtility.csprojAssemblyReference.cache
 E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.CommonUtility\obj\Debug\ALEXFW.CommonUtility.csproj.CoreCompileInputs.cache
 E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.CommonUtility\obj\Debug\ALEXFW.CommonUtility.csproj.CopyComplete
 E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.CommonUtility\obj\Debug\ALEXFW.CommonUtility.dll
 E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.CommonUtility\obj\Debug\ALEXFW.CommonUtility.pdb
+E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.CommonUtility\obj\Debug\ALEXFW.CommonUtility.csproj.AssemblyReference.cache

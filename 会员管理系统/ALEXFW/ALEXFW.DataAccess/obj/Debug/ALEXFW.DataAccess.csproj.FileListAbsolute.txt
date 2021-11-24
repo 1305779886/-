@@ -27,8 +27,8 @@ E:\github\-\会员管理系统\ALEXFW\ALEXFW.DataAccess\bin\Debug\ALEXFW.Smart.p
 E:\github\-\会员管理系统\ALEXFW\ALEXFW.DataAccess\bin\Debug\ALEXFW.Smart.xml
 E:\github\-\会员管理系统\ALEXFW\ALEXFW.DataAccess\bin\Debug\EntityFramework.xml
 E:\github\-\会员管理系统\ALEXFW\ALEXFW.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
-E:\github\-\会员管理系统\ALEXFW\ALEXFW.DataAccess\obj\Debug\ALEXFW.DataAccess.csprojAssemblyReference.cache
 E:\github\-\会员管理系统\ALEXFW\ALEXFW.DataAccess\obj\Debug\ALEXFW.DataAccess.csproj.CoreCompileInputs.cache
 E:\github\-\会员管理系统\ALEXFW\ALEXFW.DataAccess\obj\Debug\ALEXFW.DataAccess.csproj.CopyComplete
 E:\github\-\会员管理系统\ALEXFW\ALEXFW.DataAccess\obj\Debug\ALEXFW.DataAccess.dll
 E:\github\-\会员管理系统\ALEXFW\ALEXFW.DataAccess\obj\Debug\ALEXFW.DataAccess.pdb
+E:\github\-\会员管理系统\ALEXFW\ALEXFW.DataAccess\obj\Debug\ALEXFW.DataAccess.csproj.AssemblyReference.cache

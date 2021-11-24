@@ -25,8 +25,8 @@ E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.Smart.EntityFramewo
 E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.Smart.EntityFramework\bin\Debug\ALEXFW.Smart.xml
 E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.Smart.EntityFramework\bin\Debug\EntityFramework.xml
 E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.Smart.EntityFramework\bin\Debug\EntityFramework.SqlServer.xml
-E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.Smart.EntityFramework\obj\Debug\ALEXFW.Smart.EntityFramework.csprojAssemblyReference.cache
 E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.Smart.EntityFramework\obj\Debug\ALEXFW.Smart.EntityFramework.csproj.CoreCompileInputs.cache
 E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.Smart.EntityFramework\obj\Debug\ALEXFW.Smart.EntityFramework.csproj.CopyComplete
 E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.Smart.EntityFramework\obj\Debug\ALEXFW.Smart.EntityFramework.dll
 E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.Smart.EntityFramework\obj\Debug\ALEXFW.Smart.EntityFramework.pdb
+E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.Smart.EntityFramework\obj\Debug\ALEXFW.Smart.EntityFramework.csproj.AssemblyReference.cache

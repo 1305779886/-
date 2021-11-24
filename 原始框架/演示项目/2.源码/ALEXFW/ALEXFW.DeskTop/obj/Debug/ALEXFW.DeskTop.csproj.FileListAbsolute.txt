@@ -171,8 +171,8 @@ E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.DeskTop\bin\ALEXFW.
 E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.DeskTop\bin\NPOI.xml
 E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.DeskTop\bin\zxing.pdb
 E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.DeskTop\bin\zxing.xml
-E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.DeskTop\obj\Debug\ALEXFW.DeskTop.csprojAssemblyReference.cache
 E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.DeskTop\obj\Debug\ALEXFW.DeskTop.csproj.CoreCompileInputs.cache
 E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.DeskTop\obj\Debug\ALEXFW.DeskTop.csproj.CopyComplete
 E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.DeskTop\obj\Debug\ALEXFW.DeskTop.dll
 E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.DeskTop\obj\Debug\ALEXFW.DeskTop.pdb
+E:\github\-\原始框架\演示项目\2.源码\ALEXFW\ALEXFW.DeskTop\obj\Debug\ALEXFW.DeskTop.csproj.AssemblyReference.cache

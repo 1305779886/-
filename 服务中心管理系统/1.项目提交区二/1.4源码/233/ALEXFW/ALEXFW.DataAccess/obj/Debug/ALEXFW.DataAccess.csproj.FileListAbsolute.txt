@@ -27,8 +27,8 @@ E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\233\ALEXFW\A
 E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\bin\Debug\ALEXFW.Smart.xml
 E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\bin\Debug\EntityFramework.xml
 E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
-E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\obj\Debug\ALEXFW.DataAccess.csprojAssemblyReference.cache
 E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\obj\Debug\ALEXFW.DataAccess.csproj.CoreCompileInputs.cache
 E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\obj\Debug\ALEXFW.DataAccess.csproj.CopyComplete
 E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\obj\Debug\ALEXFW.DataAccess.dll
 E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\obj\Debug\ALEXFW.DataAccess.pdb
+E:\github\-\服务中心管理系统\1.项目提交区二\1.4源码\233\ALEXFW\ALEXFW.DataAccess\obj\Debug\ALEXFW.DataAccess.csproj.AssemblyReference.cache
